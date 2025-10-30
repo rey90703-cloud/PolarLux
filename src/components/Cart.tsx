@@ -5,6 +5,12 @@ import { Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import CheckoutForm from "@/components/CheckoutForm";
 
+// Helper function to get correct image path for GitHub Pages
+const getImagePath = (imagePath: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${imagePath.startsWith('/') ? imagePath.slice(1) : imagePath}`;
+};
+
 const Cart = () => {
   const { items, isCartOpen, setCartOpen, removeFromCart, updateQuantity, getTotalPrice } = useCart();
   const [showCheckout, setShowCheckout] = useState(false);
@@ -56,7 +62,7 @@ const Cart = () => {
               {items.map((item) => (
                 <div key={item.product.id} className="flex gap-4 p-4 bg-muted rounded-lg">
                   <img
-                    src={item.product.image}
+                    src={getImagePath(item.product.image)}
                     alt={item.product.name}
                     className="w-20 h-20 object-contain rounded"
                   />
