@@ -7,6 +7,7 @@ import { useCart } from "@/contexts/CartContext";
 import type { RefrigeratorProduct } from "@/types/refrigerator.types";
 import { ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 // Helper function to get correct image path for GitHub Pages
 const getImagePath = (imagePath: string) => {
@@ -31,6 +32,7 @@ const getRating = (modelName: string): { stars: number; count: number } => {
 };
 
 const Collection = () => {
+  const { t } = useTranslation();
   const { data, isLoading, error } = useRefrigerators();
   const { addToCart, setCartOpen } = useCart();
   const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
@@ -43,7 +45,7 @@ const Collection = () => {
 
   const handleAddToCart = (product: RefrigeratorProduct, showCart = true) => {
     addToCart(product);
-    toast.success("Đã thêm vào giỏ hàng", {
+    toast.success(t('cart.title'), {
       description: product.name,
     });
     if (showCart) {
@@ -78,7 +80,7 @@ const Collection = () => {
     return (
       <section id="collection" className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center">Đang tải sản phẩm...</div>
+          <div className="text-center">{t('common.loading')}</div>
         </div>
       </section>
     );
@@ -88,7 +90,7 @@ const Collection = () => {
     return (
       <section id="collection" className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center text-red-500">Lỗi tải dữ liệu sản phẩm</div>
+          <div className="text-center text-red-500">{t('common.error')}</div>
         </div>
       </section>
     );
@@ -100,22 +102,22 @@ const Collection = () => {
   const priceRanges = [
     {
       id: 'low',
-      name: 'Phân Khúc THẤP',
-      description: 'Dưới 15 triệu - Phù hợp cho mọi gia đình',
+      name: t('collection.priceRange.low'),
+      description: t('collection.priceRange.low'),
       min: 0,
       max: 15000000,
     },
     {
       id: 'medium',
-      name: 'Phân Khúc TRUNG BÌNH',
-      description: '15-40 triệu - Công nghệ hiện đại, thiết kế đẹp',
+      name: t('collection.priceRange.medium'),
+      description: t('collection.priceRange.medium'),
       min: 15000000,
       max: 40000000,
     },
     {
       id: 'high',
-      name: 'Phân Khúc CAO',
-      description: 'Trên 40 triệu - Thiết kế sang trọng, đỉnh cao công nghệ',
+      name: t('collection.priceRange.high'),
+      description: t('collection.priceRange.high'),
       min: 40000000,
       max: Infinity,
     },
@@ -145,11 +147,11 @@ const Collection = () => {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-            Tủ lạnh
-            <span className="text-primary"> Samsung</span>
+            {t('collection.title')}
+            <span className="text-primary"> {t('collection.titleHighlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            {data.metadata.totalProducts} sản phẩm tủ lạnh Samsung chính hãng tại Việt Nam
+            {t('collection.description')}
           </p>
           
           {/* Search Bar */}
@@ -157,7 +159,7 @@ const Collection = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Tìm kiếm sản phẩm theo tên, model..."
+                placeholder={t('collection.search')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-4 py-3 pl-12 border-2 border-muted rounded-lg focus:outline-none focus:border-primary transition-colors"
@@ -184,7 +186,7 @@ const Collection = () => {
             </div>
             {searchQuery && (
               <p className="text-sm text-muted-foreground mt-2">
-                Tìm thấy {filteredProducts.length} sản phẩm
+                {t('collection.resultsFound', { count: filteredProducts.length })}
               </p>
             )}
           </div>
@@ -208,7 +210,7 @@ const Collection = () => {
                   {range.description}
                 </p>
                 <p className="text-sm text-primary font-semibold mt-2">
-                  {range.products.length} sản phẩm
+                  {t('collection.resultsFound', { count: range.products.length })}
                 </p>
               </div>
 
@@ -273,7 +275,7 @@ const Collection = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded font-semibold">
-                        Tiết kiệm {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(getOriginalPrice(fridge.price) - fridge.price)}
+                        {t('collection.save', { amount: new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(getOriginalPrice(fridge.price) - fridge.price) })}
                       </span>
                       <span className="text-xs text-muted-foreground">
                         {fridge.capacity}{fridge.capacityUnit}
@@ -295,7 +297,7 @@ const Collection = () => {
                       size="sm"
                       onClick={() => setSelectedFridge(fridge)}
                     >
-                      Chi tiết
+                      {t('collection.viewDetails')}
                     </Button>
                     <Button
                       size="sm"
@@ -303,7 +305,7 @@ const Collection = () => {
                       className="gap-1"
                     >
                       <ShoppingCart className="w-3 h-3" />
-                      Mua
+                      {t('collection.buyNow')}
                     </Button>
                   </div>
                 </div>
@@ -338,15 +340,15 @@ const Collection = () => {
 
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">Dung tích</p>
+                    <p className="text-sm text-muted-foreground">{t('collection.specs.capacity')}</p>
                     <p className="text-xl font-bold text-primary">{selectedFridge.capacity}{selectedFridge.capacityUnit}</p>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">Giá</p>
+                    <p className="text-sm text-muted-foreground">{t('collection.currentPrice')}</p>
                     <p className="text-xl font-bold text-primary">{selectedFridge.priceFormatted}</p>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">Tiết kiệm điện</p>
+                    <p className="text-sm text-muted-foreground">{t('collection.specs.energyRating')}</p>
                     <p className="text-xl font-bold text-primary">{selectedFridge.energyRating}</p>
                   </div>
                 </div>
@@ -356,7 +358,7 @@ const Collection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">Tính năng nổi bật:</h4>
+                  <h4 className="font-semibold text-lg mb-3">{t('collection.specs.capacity')}:</h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedFridge.features.map((feature, index) => (
                       <span key={index} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
@@ -367,7 +369,7 @@ const Collection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">Thông số kỹ thuật:</h4>
+                  <h4 className="font-semibold text-lg mb-3">{t('collection.specs.type')}:</h4>
                   <ul className="space-y-2">
                     {selectedFridge.specs.map((spec, index) => (
                       <li key={index} className="flex items-start gap-2">
@@ -379,25 +381,25 @@ const Collection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">Kích thước:</h4>
+                  <h4 className="font-semibold text-lg mb-3">{t('collection.specs.capacity')}:</h4>
                   <div className="grid grid-cols-3 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Rộng</p>
+                      <p className="text-sm text-muted-foreground">{t('common.view')}</p>
                       <p className="font-semibold">{selectedFridge.dimensions.width}mm</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Cao</p>
+                      <p className="text-sm text-muted-foreground">{t('common.view')}</p>
                       <p className="font-semibold">{selectedFridge.dimensions.height}mm</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Sâu</p>
+                      <p className="text-sm text-muted-foreground">{t('common.view')}</p>
                       <p className="font-semibold">{selectedFridge.dimensions.depth}mm</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-2">Màu sắc:</h4>
+                  <h4 className="font-semibold text-lg mb-2">{t('collection.specs.type')}:</h4>
                   <p className="text-muted-foreground">{selectedFridge.color.join(", ")}</p>
                 </div>
 
@@ -412,7 +414,7 @@ const Collection = () => {
                     }}
                   >
                     <ShoppingCart className="w-5 h-5" />
-                    Mua ngay
+                    {t('collection.buyNow')}
                   </Button>
                   <Button
                     variant="outline"
@@ -422,7 +424,7 @@ const Collection = () => {
                       setSelectedFridge(null);
                     }}
                   >
-                    Thêm vào giỏ
+                    {t('collection.addToCart')}
                   </Button>
                 </div>
               </div>

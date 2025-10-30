@@ -3,8 +3,10 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -47,11 +49,11 @@ const Gallery = () => {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-            Cảm hứng
-            <span className="text-primary"> Thiết kế</span>
+            {t('gallery.title')}
+            <span className="text-primary"> {t('gallery.titleHighlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Khám phá vẻ đẹp hoàn hảo của tủ lạnh Samsung trong không gian sống thực tế
+            {t('gallery.description')}
           </p>
         </div>
 

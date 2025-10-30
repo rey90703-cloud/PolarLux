@@ -3,8 +3,10 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import HeaderTop from "@/components/HeaderTop";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,12 +28,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "Trang chủ", id: "hero" },
-    { label: "Giới thiệu", id: "about" },
-    { label: "Bộ sưu tập", id: "collection" },
-    { label: "Công nghệ", id: "technology" },
-    { label: "Gallery", id: "gallery" },
-    { label: "Liên hệ", id: "contact" },
+    { label: t('nav.home'), id: "hero" },
+    { label: t('nav.about'), id: "about" },
+    { label: t('nav.collection'), id: "collection" },
+    { label: t('nav.gallery'), id: "gallery" },
+    { label: t('nav.contact'), id: "contact" },
   ];
 
   return (
