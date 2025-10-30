@@ -19,7 +19,7 @@ const Collection = () => {
   const { addToCart, setCartOpen } = useCart();
   const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
   const [isVisible, setIsVisible] = useState(true); // Set true để hiển thị ngay
-  const [activeCategory, setActiveCategory] = useState("top-freezer");
+  const [activePriceRange, setActivePriceRange] = useState("budget");
   const sectionRef = useRef<HTMLDivElement>(null);
 
   console.log('Collection render:', { data, isLoading, error });
@@ -77,6 +77,45 @@ const Collection = () => {
     );
   }
 
+  // Group all products by price range
+  const allProducts = data.categories.flatMap(cat => cat.products);
+  
+  const priceRanges = [
+    {
+      id: 'budget',
+      name: 'Phổ Thông',
+      description: 'Dưới 10 triệu - Phù hợp cho mọi gia đình',
+      min: 0,
+      max: 10000000,
+    },
+    {
+      id: 'mid-range',
+      name: 'Trung Cấp',
+      description: '10-20 triệu - Công nghệ hiện đại, thiết kế đẹp',
+      min: 10000000,
+      max: 20000000,
+    },
+    {
+      id: 'premium',
+      name: 'Cao Cấp',
+      description: '20-50 triệu - Thiết kế sang trọng, tính năng vượt trội',
+      min: 20000000,
+      max: 50000000,
+    },
+    {
+      id: 'luxury',
+      name: 'Siêu Cao Cấp',
+      description: 'Trên 50 triệu - Đỉnh cao công nghệ, đẳng cấp thượng lưu',
+      min: 50000000,
+      max: Infinity,
+    },
+  ];
+
+  const productsByPrice = priceRanges.map(range => ({
+    ...range,
+    products: allProducts.filter(p => p.price >= range.min && p.price < range.max)
+  }));
+
   return (
     <section
       id="collection"
@@ -95,28 +134,31 @@ const Collection = () => {
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
-          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-3 mb-8">
-            {data.categories.map((category) => (
-              <TabsTrigger key={category.id} value={category.id}>
-                {category.name}
+        {/* Price Range Tabs */}
+        <Tabs value={activePriceRange} onValueChange={setActivePriceRange} className="w-full">
+          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-4 mb-8">
+            {productsByPrice.map((range) => (
+              <TabsTrigger key={range.id} value={range.id}>
+                {range.name}
               </TabsTrigger>
             ))}
           </TabsList>
 
-          {data.categories.map((category) => (
-            <TabsContent key={category.id} value={category.id}>
-              {/* Category Description */}
+          {productsByPrice.map((range) => (
+            <TabsContent key={range.id} value={range.id}>
+              {/* Price Range Description */}
               <div className="text-center mb-8">
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  {category.description}
+                  {range.description}
+                </p>
+                <p className="text-sm text-primary font-semibold mt-2">
+                  {range.products.length} sản phẩm
                 </p>
               </div>
 
               {/* Product Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                {category.products.map((fridge, index) => (
+                {range.products.map((fridge, index) => (
             <div
               key={fridge.id}
               className={`group transition-all duration-700 ${
