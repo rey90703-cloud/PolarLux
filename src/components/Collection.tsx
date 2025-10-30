@@ -19,7 +19,7 @@ const Collection = () => {
   const { addToCart, setCartOpen } = useCart();
   const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
   const [isVisible, setIsVisible] = useState(true); // Set true để hiển thị ngay
-  const [activePriceRange, setActivePriceRange] = useState("budget");
+  const [activePriceRange, setActivePriceRange] = useState("low");
   const sectionRef = useRef<HTMLDivElement>(null);
 
   console.log('Collection render:', { data, isLoading, error });
@@ -82,31 +82,24 @@ const Collection = () => {
   
   const priceRanges = [
     {
-      id: 'budget',
-      name: 'Phổ Thông',
-      description: 'Dưới 10 triệu - Phù hợp cho mọi gia đình',
+      id: 'low',
+      name: 'Phân Khúc THẤP',
+      description: 'Dưới 15 triệu - Phù hợp cho mọi gia đình',
       min: 0,
-      max: 10000000,
+      max: 15000000,
     },
     {
-      id: 'mid-range',
-      name: 'Trung Cấp',
-      description: '10-20 triệu - Công nghệ hiện đại, thiết kế đẹp',
-      min: 10000000,
-      max: 20000000,
+      id: 'medium',
+      name: 'Phân Khúc TRUNG BÌNH',
+      description: '15-40 triệu - Công nghệ hiện đại, thiết kế đẹp',
+      min: 15000000,
+      max: 40000000,
     },
     {
-      id: 'premium',
-      name: 'Cao Cấp',
-      description: '20-50 triệu - Thiết kế sang trọng, tính năng vượt trội',
-      min: 20000000,
-      max: 50000000,
-    },
-    {
-      id: 'luxury',
-      name: 'Siêu Cao Cấp',
-      description: 'Trên 50 triệu - Đỉnh cao công nghệ, đẳng cấp thượng lưu',
-      min: 50000000,
+      id: 'high',
+      name: 'Phân Khúc CAO',
+      description: 'Trên 40 triệu - Thiết kế sang trọng, đỉnh cao công nghệ',
+      min: 40000000,
       max: Infinity,
     },
   ];
@@ -136,7 +129,7 @@ const Collection = () => {
 
         {/* Price Range Tabs */}
         <Tabs value={activePriceRange} onValueChange={setActivePriceRange} className="w-full">
-          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-4 mb-8">
+          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-3 mb-8">
             {productsByPrice.map((range) => (
               <TabsTrigger key={range.id} value={range.id}>
                 {range.name}
