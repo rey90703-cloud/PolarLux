@@ -14,12 +14,29 @@ const getImagePath = (imagePath: string) => {
   return `${base}${imagePath.startsWith('/') ? imagePath.slice(1) : imagePath}`;
 };
 
+// Helper function to calculate original price (simulate discount)
+const getOriginalPrice = (currentPrice: number): number => {
+  // Simulate 10-20% discount
+  const discountPercent = Math.floor(Math.random() * 11) + 10; // 10-20%
+  return Math.round(currentPrice / (1 - discountPercent / 100));
+};
+
+// Helper function to get rating (simulate ratings)
+const getRating = (modelName: string): { stars: number; count: number } => {
+  // Generate consistent rating based on model name
+  const hash = modelName.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const stars = 4 + (hash % 11) / 10; // 4.0 - 5.0
+  const count = 50 + (hash % 450); // 50 - 500 reviews
+  return { stars: Math.round(stars * 10) / 10, count };
+};
+
 const Collection = () => {
   const { data, isLoading, error } = useRefrigerators();
   const { addToCart, setCartOpen } = useCart();
   const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
   const [isVisible, setIsVisible] = useState(true); // Set true để hiển thị ngay
   const [activePriceRange, setActivePriceRange] = useState("low");
+  const [searchQuery, setSearchQuery] = useState("");
   const sectionRef = useRef<HTMLDivElement>(null);
 
   console.log('Collection render:', { data, isLoading, error });
@@ -104,9 +121,18 @@ const Collection = () => {
     },
   ];
 
+  // Filter by search query
+  const filteredProducts = searchQuery.trim()
+    ? allProducts.filter(p => 
+        p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.modelName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.description.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : allProducts;
+
   const productsByPrice = priceRanges.map(range => ({
     ...range,
-    products: allProducts.filter(p => p.price >= range.min && p.price < range.max)
+    products: filteredProducts.filter(p => p.price >= range.min && p.price < range.max)
   }));
 
   return (
@@ -122,9 +148,46 @@ const Collection = () => {
             Tủ lạnh
             <span className="text-primary"> Samsung</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
             {data.metadata.totalProducts} sản phẩm tủ lạnh Samsung chính hãng tại Việt Nam
           </p>
+          
+          {/* Search Bar */}
+          <div className="max-w-xl mx-auto">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm theo tên, model..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-3 pl-12 border-2 border-muted rounded-lg focus:outline-none focus:border-primary transition-colors"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              )}
+            </div>
+            {searchQuery && (
+              <p className="text-sm text-muted-foreground mt-2">
+                Tìm thấy {filteredProducts.length} sản phẩm
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Price Range Tabs */}
@@ -181,13 +244,41 @@ const Collection = () => {
                     </h3>
                   </div>
 
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-lg font-bold text-primary">
-                      {fridge.priceFormatted}
+                  {/* Rating */}
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className={`w-4 h-4 ${i < Math.floor(getRating(fridge.modelName).stars) ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300 fill-gray-300'}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                    <span className="text-xs text-muted-foreground ml-1">
+                      {getRating(fridge.modelName).stars} ({getRating(fridge.modelName).count})
                     </span>
-                    <span className="text-xs text-muted-foreground">
-                      {fridge.capacity}{fridge.capacityUnit}
-                    </span>
+                  </div>
+
+                  {/* Price */}
+                  <div className="space-y-1">
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-lg font-bold text-primary">
+                        {fridge.priceFormatted}
+                      </span>
+                      <span className="text-xs line-through text-muted-foreground">
+                        {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(getOriginalPrice(fridge.price))}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded font-semibold">
+                        Tiết kiệm {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(getOriginalPrice(fridge.price) - fridge.price)}
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {fridge.capacity}{fridge.capacityUnit}
+                      </span>
+                    </div>
                   </div>
 
                   <div className="flex flex-wrap gap-1">
