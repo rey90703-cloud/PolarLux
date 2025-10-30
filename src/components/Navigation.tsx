@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
+import HeaderTop from "@/components/HeaderTop";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,27 +35,31 @@ const Navigation = () => {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass-effect shadow-lg" : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+    <div className="fixed top-0 left-0 right-0 z-50">
+      {/* Header Top Bar */}
+      <HeaderTop />
+
+      {/* Main Navigation */}
+      <nav
+        className={`transition-all duration-300 ${
+          isScrolled ? "glass-effect shadow-lg" : "bg-transparent"
+        }`}
+      >
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center bg-primary rounded-lg transition-transform duration-300 group-hover:scale-110">
-              <span className="text-white font-bold text-lg lg:text-xl">μ</span>
-            </div>
-            <span
-              className={`font-semibold text-base lg:text-lg transition-colors duration-300 ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
-            >
-              μ-Fridge
+            <img 
+              src={logo} 
+              alt="PolarLux Logo" 
+              className="w-8 h-8 lg:w-10 lg:h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+            />
+            <span className="font-semibold text-base lg:text-lg transition-colors duration-300">
+              <span style={{ color: '#3b93bd' }}>Polar</span>
+              <span className={isScrolled ? "text-foreground" : "text-white"} style={{ color: isScrolled ? undefined : '#C0C0C0' }}>Lux</span>
             </span>
           </button>
 
@@ -105,6 +111,7 @@ const Navigation = () => {
         </div>
       )}
     </nav>
+    </div>
   );
 };
 

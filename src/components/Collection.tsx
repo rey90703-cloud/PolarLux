@@ -1,23 +1,32 @@
 import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import fridge1 from "@/assets/fridge-1.jpg";
-import fridge2 from "@/assets/fridge-2.jpg";
-import fridge3 from "@/assets/fridge-3.jpg";
-import fridge4 from "@/assets/fridge-4.jpg";
-
-interface FridgeModel {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  specs: string[];
-}
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useRefrigerators } from "@/hooks/useRefrigerators";
+import { useCart } from "@/contexts/CartContext";
+import type { RefrigeratorProduct } from "@/types/refrigerator.types";
+import { ShoppingCart } from "lucide-react";
+import { toast } from "sonner";
 
 const Collection = () => {
-  const [selectedFridge, setSelectedFridge] = useState<FridgeModel | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const { data, isLoading, error } = useRefrigerators();
+  const { addToCart, setCartOpen } = useCart();
+  const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
+  const [isVisible, setIsVisible] = useState(true); // Set true để hiển thị ngay
+  const [activeCategory, setActiveCategory] = useState("top-freezer");
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  console.log('Collection render:', { data, isLoading, error });
+
+  const handleAddToCart = (product: RefrigeratorProduct, showCart = true) => {
+    addToCart(product);
+    toast.success("Đã thêm vào giỏ hàng", {
+      description: product.name,
+    });
+    if (showCart) {
+      setCartOpen(true);
+    }
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,66 +39,37 @@ const Collection = () => {
     );
 
     if (sectionRef.current) {
+      // Check if already in viewport
+      const rect = sectionRef.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setIsVisible(true);
+      }
+      
       observer.observe(sectionRef.current);
     }
 
     return () => observer.disconnect();
   }, []);
 
-  const fridges: FridgeModel[] = [
-    {
-      id: 1,
-      name: "μ-French Pro",
-      image: fridge1,
-      description: "Tủ lạnh French Door cao cấp với màn hình LED hiển thị nhiệt độ thông minh",
-      specs: [
-        "Dung tích: 650L",
-        "Công nghệ Inverter tiết kiệm điện",
-        "Khử mùi, kháng khuẩn Nano Silver",
-        "Màn hình LED cảm ứng",
-        "Ngăn đá tự động",
-      ],
-    },
-    {
-      id: 2,
-      name: "μ-Side Elite",
-      image: fridge2,
-      description: "Thiết kế Side-by-Side sang trọng với hệ thống làm đá và lấy nước tự động",
-      specs: [
-        "Dung tích: 580L",
-        "Làm đá tự động",
-        "Lấy nước không cần mở cửa",
-        "Công nghệ Multi Air Flow",
-        "Tiết kiệm điện 35%",
-      ],
-    },
-    {
-      id: 3,
-      name: "μ-Smart Connect",
-      image: fridge3,
-      description: "Tủ lạnh thông minh kết nối WiFi, điều khiển qua smartphone",
-      specs: [
-        "Dung tích: 450L",
-        "Kết nối WiFi, App điều khiển",
-        "Màn hình cảm ứng 10 inch",
-        "AI dự đoán nhu cầu",
-        "Compact, phù hợp căn hộ",
-      ],
-    },
-    {
-      id: 4,
-      name: "μ-Prestige 4D",
-      image: fridge4,
-      description: "Đỉnh cao công nghệ với 4 cửa độc lập, cửa kính trong suốt cao cấp",
-      specs: [
-        "Dung tích: 720L",
-        "4 cửa độc lập",
-        "Cửa kính trong suốt",
-        "Hệ thống làm lạnh 3 chiều",
-        "Thiết kế Premium siêu sang",
-      ],
-    },
-  ];
+  if (isLoading) {
+    return (
+      <section id="collection" className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center">Đang tải sản phẩm...</div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <section id="collection" className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center text-red-500">Lỗi tải dữ liệu sản phẩm</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
@@ -101,17 +81,36 @@ const Collection = () => {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-            Bộ sưu tập
-            <span className="text-primary"> Cao cấp</span>
+            Tủ lạnh
+            <span className="text-primary"> Samsung</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Khám phá dòng sản phẩm tủ lạnh thông minh với thiết kế đẳng cấp và công nghệ tiên tiến
+            {data.metadata.totalProducts} sản phẩm tủ lạnh Samsung chính hãng tại Việt Nam
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {fridges.map((fridge, index) => (
+        {/* Category Tabs */}
+        <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
+          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-3 mb-8">
+            {data.categories.map((category) => (
+              <TabsTrigger key={category.id} value={category.id}>
+                {category.name}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+
+          {data.categories.map((category) => (
+            <TabsContent key={category.id} value={category.id}>
+              {/* Category Description */}
+              <div className="text-center mb-8">
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  {category.description}
+                </p>
+              </div>
+
+              {/* Product Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                {category.products.map((fridge, index) => (
             <div
               key={fridge.id}
               className={`group transition-all duration-700 ${
@@ -121,63 +120,178 @@ const Collection = () => {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-hover transition-all duration-300 hover:-translate-y-2">
+              <div className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-hover transition-all duration-300 hover:-translate-y-2">
                 {/* Image */}
-                <div className="aspect-[3/4] overflow-hidden bg-muted">
+                <div className="aspect-square overflow-hidden bg-muted">
                   <img
                     src={fridge.image}
                     alt={fridge.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
 
                 {/* Content */}
-                <div className="p-6 space-y-4">
-                  <h3 className="text-xl font-bold text-foreground">
-                    {fridge.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    {fridge.description}
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    onClick={() => setSelectedFridge(fridge)}
-                  >
-                    Xem chi tiết
-                  </Button>
+                <div className="p-4 space-y-3">
+                  <div className="space-y-1">
+                    <p className="text-xs text-muted-foreground font-medium">{fridge.modelName}</p>
+                    <h3 className="text-sm font-bold text-foreground line-clamp-2 min-h-[2.5rem]">
+                      {fridge.name}
+                    </h3>
+                  </div>
+
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-lg font-bold text-primary">
+                      {fridge.priceFormatted}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {fridge.capacity}{fridge.capacityUnit}
+                    </span>
+                  </div>
+
+                  <div className="flex flex-wrap gap-1">
+                    {fridge.features.slice(0, 2).map((feature, i) => (
+                      <span key={i} className="text-xs bg-secondary px-2 py-1 rounded-md">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setSelectedFridge(fridge)}
+                    >
+                      Chi tiết
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={() => handleAddToCart(fridge)}
+                      className="gap-1"
+                    >
+                      <ShoppingCart className="w-3 h-3" />
+                      Mua
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
+                ))}
+              </div>
+            </TabsContent>
           ))}
-        </div>
+        </Tabs>
       </div>
 
       {/* Modal */}
       <Dialog open={!!selectedFridge} onOpenChange={() => setSelectedFridge(null)}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
           {selectedFridge && (
             <>
               <DialogHeader>
-                <DialogTitle className="text-2xl">{selectedFridge.name}</DialogTitle>
+                <div className="space-y-2">
+                  <p className="text-sm text-muted-foreground">{selectedFridge.modelName}</p>
+                  <DialogTitle className="text-2xl">{selectedFridge.name}</DialogTitle>
+                </div>
               </DialogHeader>
               <div className="space-y-6">
-                <img
-                  src={selectedFridge.image}
-                  alt={selectedFridge.name}
-                  className="w-full rounded-lg"
-                />
-                <p className="text-muted-foreground">{selectedFridge.description}</p>
+                <div className="bg-muted rounded-lg p-6 flex items-center justify-center">
+                  <img
+                    src={selectedFridge.image}
+                    alt={selectedFridge.name}
+                    className="max-h-96 object-contain"
+                  />
+                </div>
+
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div className="space-y-1">
+                    <p className="text-sm text-muted-foreground">Dung tích</p>
+                    <p className="text-xl font-bold text-primary">{selectedFridge.capacity}{selectedFridge.capacityUnit}</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-sm text-muted-foreground">Giá</p>
+                    <p className="text-xl font-bold text-primary">{selectedFridge.priceFormatted}</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-sm text-muted-foreground">Tiết kiệm điện</p>
+                    <p className="text-xl font-bold text-primary">{selectedFridge.energyRating}</p>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-muted-foreground">{selectedFridge.description}</p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-lg mb-3">Tính năng nổi bật:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedFridge.features.map((feature, index) => (
+                      <span key={index} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
                 <div>
                   <h4 className="font-semibold text-lg mb-3">Thông số kỹ thuật:</h4>
                   <ul className="space-y-2">
                     {selectedFridge.specs.map((spec, index) => (
                       <li key={index} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-primary mt-1">✓</span>
                         <span className="text-muted-foreground">{spec}</span>
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-lg mb-3">Kích thước:</h4>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground">Rộng</p>
+                      <p className="font-semibold">{selectedFridge.dimensions.width}mm</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Cao</p>
+                      <p className="font-semibold">{selectedFridge.dimensions.height}mm</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Sâu</p>
+                      <p className="font-semibold">{selectedFridge.dimensions.depth}mm</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Màu sắc:</h4>
+                  <p className="text-muted-foreground">{selectedFridge.color.join(", ")}</p>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex gap-3 pt-4">
+                  <Button
+                    size="lg"
+                    className="flex-1 gap-2"
+                    onClick={() => {
+                      handleAddToCart(selectedFridge);
+                      setSelectedFridge(null);
+                    }}
+                  >
+                    <ShoppingCart className="w-5 h-5" />
+                    Mua ngay
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => {
+                      handleAddToCart(selectedFridge, false);
+                      setSelectedFridge(null);
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
                 </div>
               </div>
             </>

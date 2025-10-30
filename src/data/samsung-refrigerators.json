@@ -1,0 +1,1061 @@
+{
+  "categories": [
+    {
+      "id": "top-freezer",
+      "name": "Tủ Lạnh Ngăn Đông Trên",
+      "nameEn": "Top Freezer",
+      "description": "Tủ lạnh ngăn đông trên với thiết kế truyền thống, tiết kiệm không gian và chi phí, phù hợp cho mọi gia đình",
+      "series": "RT Series",
+      "products": [
+        {
+          "id": "rt38cg6784b1sv",
+          "modelName": "RT38CG6784B1SV",
+          "name": "Samsung Inverter 382L Bespoke AI",
+          "capacity": 382,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-smartthings-ai-energy-mode-455269-rt38cg6584b1sv-thumb-536331766.avif",
+          "description": "Tủ lạnh Bespoke AI với công nghệ Optimal Fresh+ giữ thực phẩm tươi lâu hơn",
+          "price": 13990000,
+          "priceFormatted": "13.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Đen", "Nâu"],
+          "specs": [
+            "Dung tích: 382L",
+            "Công nghệ Bespoke AI",
+            "Optimal Fresh+ Zone",
+            "Công nghệ Inverter tiết kiệm điện",
+            "Ngăn đông mềm -1°C",
+            "Multi Air Flow làm lạnh đều",
+            "Khử mùi kháng khuẩn",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "Bespoke AI",
+            "Optimal Fresh+",
+            "Digital Inverter",
+            "Multi Air Flow"
+          ],
+          "dimensions": {
+            "width": 595,
+            "height": 1780,
+            "depth": 668
+          }
+        },
+        {
+          "id": "rt62k7011bs",
+          "modelName": "RT62K7011BS",
+          "name": "Samsung Twin Cooling Plus 620L",
+          "capacity": 620,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Dung tích lớn 620L với công nghệ Twin Cooling Plus giữ độ ẩm tối ưu",
+          "price": 19990000,
+          "priceFormatted": "19.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Inox đen"],
+          "specs": [
+            "Dung tích: 620L (631L gross)",
+            "Công nghệ Twin Cooling Plus",
+            "Hệ thống No Frost",
+            "Multi Flow làm lạnh đa chiều",
+            "Ngăn rau quả độ ẩm cao",
+            "LED chiếu sáng tiết kiệm điện",
+            "Thiết kế sang trọng",
+            "Bảo hành 12 tháng"
+          ],
+          "features": [
+            "Twin Cooling Plus",
+            "No Frost",
+            "Multi Flow",
+            "High Humidity Crisper"
+          ],
+          "dimensions": {
+            "width": 836,
+            "height": 1862,
+            "depth": 788
+          }
+        },
+        {
+          "id": "rt31cg5020s9",
+          "modelName": "RT31CG5020S9",
+          "name": "Samsung Inverter 305L All-Around Cooling",
+          "capacity": 305,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-spacemax-rt31cg5424b1sv-thumb-536303518.webp",
+          "description": "Tủ lạnh compact với công nghệ làm lạnh vòng quanh All-Around Cooling",
+          "price": 8990000,
+          "priceFormatted": "8.990.000đ",
+          "energyRating": "4 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 305L",
+            "Công nghệ All-Around Cooling",
+            "Hệ thống Multi Flow",
+            "Digital Inverter tiết kiệm điện",
+            "Ngăn rau quả lớn",
+            "Khay đá dễ tháo",
+            "Thiết kế hiện đại",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "All-Around Cooling",
+            "Digital Inverter",
+            "Multi Flow",
+            "Large Crisper"
+          ],
+          "dimensions": {
+            "width": 555,
+            "height": 1620,
+            "depth": 637
+          }
+        },
+        {
+          "id": "rt22m4032bu",
+          "modelName": "RT22M4032BU",
+          "name": "Samsung Digital Inverter 243L Starry Black",
+          "capacity": 243,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-rt22m4032bu-rt22m4032bu-sv-thumb-536799415.avif",
+          "description": "Tủ lạnh thiết kế đẹp với công nghệ Digital Inverter bền bỉ",
+          "price": 7490000,
+          "priceFormatted": "7.490.000đ",
+          "energyRating": "4 sao",
+          "color": ["Đen"],
+          "specs": [
+            "Dung tích: 243L",
+            "Công nghệ Digital Inverter",
+            "Optimal Fresh Zone",
+            "Ngăn đông mềm -1°C",
+            "Bộ lọc khử mùi tự nhiên",
+            "Kệ kính chịu lực 150kg",
+            "LED chiếu sáng nhẹ nhàng",
+            "Bảo hành máy nén 20 năm"
+          ],
+          "features": [
+            "Digital Inverter",
+            "Optimal Fresh Zone",
+            "20-year Warranty",
+            "Tempered Glass Shelves"
+          ],
+          "dimensions": {
+            "width": 555,
+            "height": 1445,
+            "depth": 637
+          }
+        },
+        {
+          "id": "rt20har8dbu",
+          "modelName": "RT20HAR8DBU",
+          "name": "Samsung Digital Inverter 216L",
+          "capacity": 216,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-rt20har8dbu-rt20har8dbu-sv-thumb-536800428.avif",
+          "description": "Tủ lạnh nhỏ gọn phù hợp cho gia đình 2-3 người",
+          "price": 6290000,
+          "priceFormatted": "6.290.000đ",
+          "energyRating": "3 sao",
+          "color": ["Xanh đen"],
+          "specs": [
+            "Dung tích: 216L",
+            "Digital Inverter tiết kiệm điện",
+            "Kiểm soát độ ẩm ngăn rau",
+            "Kệ linh hoạt dễ sử dụng",
+            "Ngăn cửa chứa chai lớn",
+            "Mr. Coolpack giữ lạnh 1h khi mất điện",
+            "Bộ lọc khử mùi",
+            "Bảo hành máy nén 20 năm"
+          ],
+          "features": [
+            "Digital Inverter",
+            "Humidity Control",
+            "Mr. Coolpack",
+            "Deodorizer Filter"
+          ],
+          "dimensions": {
+            "width": 555,
+            "height": 1445,
+            "depth": 637
+          }
+        },
+        {
+          "id": "rt18m6213sr",
+          "modelName": "RT18M6213SR",
+          "name": "Samsung Twin Cooling Plus 510L",
+          "capacity": 510,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh 18 cu.ft với FlexZone linh hoạt chuyển đổi ngăn đông/mát",
+          "price": 16990000,
+          "priceFormatted": "16.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 510L (18 cu.ft)",
+            "Twin Cooling Plus công nghệ làm lạnh kép",
+            "FlexZone chuyển đổi linh hoạt",
+            "True No-Frost chống đóng băng",
+            "Máy làm đá tự động",
+            "LED chiếu sáng",
+            "Cửa có thể đảo chiều",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "Twin Cooling Plus",
+            "FlexZone",
+            "Auto Ice Maker",
+            "True No-Frost"
+          ],
+          "dimensions": {
+            "width": 730,
+            "height": 1695,
+            "depth": 810
+          }
+        },
+        {
+          "id": "rtf380g",
+          "modelName": "RTF380G",
+          "name": "Samsung All-Around Cooling 208L",
+          "capacity": 208,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh 7.4 cu.ft với công nghệ làm lạnh vòng quanh",
+          "price": 6990000,
+          "priceFormatted": "6.990.000đ",
+          "energyRating": "4 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 208L (155L + 53L)",
+            "Digital Inverter Compressor",
+            "All-Around Cooling làm lạnh đều",
+            "Moist Fresh Zone giữ độ ẩm",
+            "Easy Slide Shelf kệ trượt dễ dàng",
+            "Bộ lọc khử mùi",
+            "LED chiếu sáng",
+            "Bảo hành máy nén 20 năm"
+          ],
+          "features": [
+            "Digital Inverter",
+            "All-Around Cooling",
+            "Moist Fresh Zone",
+            "20-year Warranty"
+          ],
+          "dimensions": {
+            "width": 555,
+            "height": 1445,
+            "depth": 637
+          }
+        },
+        {
+          "id": "rt16a6195sr",
+          "modelName": "RT16A6195SR",
+          "name": "Samsung All-Around Cooling 441L",
+          "capacity": 441,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh 15.6 cu.ft thiết kế hiện đại với cửa có thể đảo chiều",
+          "price": 12990000,
+          "priceFormatted": "12.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 441L (15.6 cu.ft)",
+            "All-Around Cooling làm lạnh đồng đều",
+            "Cửa có thể đảo chiều",
+            "LED chiếu sáng tiết kiệm năng lượng",
+            "Ngăn rau quả lớn",
+            "Kệ kính chịu lực",
+            "Thiết kế inox sang trọng",
+            "Tiết kiệm điện năng"
+          ],
+          "features": [
+            "All-Around Cooling",
+            "Reversible Door",
+            "LED Lighting",
+            "Energy Star"
+          ],
+          "dimensions": {
+            "width": 700,
+            "height": 1700,
+            "depth": 750
+          }
+        },
+        {
+          "id": "rt6300d",
+          "modelName": "RT6300D",
+          "name": "Samsung AI Energy Mode 521L",
+          "capacity": 521,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-bespoke-design-453404-rt47cb66868asv-thumb-536331958.avif",
+          "description": "Tủ lạnh với AI Energy Mode tiết kiệm điện đến 10%",
+          "price": 15490000,
+          "priceFormatted": "15.490.000đ",
+          "energyRating": "5 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 521L",
+            "AI Energy Mode tiết kiệm 10% điện năng",
+            "Optimal Fresh+ tùy chỉnh chế độ bảo quản",
+            "SpaceMax™ tăng không gian lưu trữ",
+            "Thiết kế cửa phẳng hiện đại",
+            "Máy làm đá tự động (tùy chọn)",
+            "Multi Air Flow",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "AI Energy Mode",
+            "Optimal Fresh+",
+            "SpaceMax",
+            "Optional Ice Maker"
+          ],
+          "dimensions": {
+            "width": 650,
+            "height": 1750,
+            "depth": 700
+          }
+        },
+        {
+          "id": "rt58k7000s8",
+          "modelName": "RT58K7000S8",
+          "name": "Samsung Twin Cooling Plus 580L",
+          "capacity": 580,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-top-mount-freezer-bespoke-rt31cb56248asv-thumb-536476428.avif",
+          "description": "Tủ lạnh dung tích lớn với công nghệ Twin Cooling Plus cao cấp",
+          "price": 18990000,
+          "priceFormatted": "18.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 580L",
+            "Twin Cooling Plus độc lập 2 dàn lạnh",
+            "Duy trì độ ẩm tối ưu",
+            "Ngăn chặn lẫn mùi giữa các ngăn",
+            "Kệ điều chỉnh linh hoạt",
+            "Ngăn rau quả Big Box",
+            "Thiết kế cao cấp",
+            "Tiết kiệm năng lượng"
+          ],
+          "features": [
+            "Twin Cooling Plus",
+            "Humidity Control",
+            "Big Box Crisper",
+            "Adjustable Shelves"
+          ],
+          "dimensions": {
+            "width": 720,
+            "height": 1850,
+            "depth": 750
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom-freezer",
+      "name": "Tủ Lạnh Ngăn Đông Dưới",
+      "nameEn": "Bottom Freezer",
+      "description": "Tủ lạnh ngăn đông dưới tiện lợi, dễ dàng tiếp cận thực phẩm tươi, thiết kế hiện đại và sang trọng",
+      "series": "RB Series",
+      "products": [
+        {
+          "id": "rb16dg6000sl",
+          "modelName": "RB16DG6000SL",
+          "name": "Samsung Counter Depth 453L",
+          "capacity": 453,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-ref-rb4000-rb30n4190b1-sv-thumb-549184683.webp",
+          "description": "Tủ lạnh 16 cu.ft thiết kế âm tủ sang trọng, khít với tủ bếp",
+          "price": 21990000,
+          "priceFormatted": "21.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 453L (16 cu.ft)",
+            "Thiết kế Counter Depth âm tủ",
+            "SpaceMax™ tối ưu không gian",
+            "All-Around Cooling làm lạnh đồng đều",
+            "Digital Inverter tiết kiệm điện",
+            "Ngăn rau quả độ ẩm cao",
+            "Ngăn đông lớn với ngăn kéo",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "Counter Depth Design",
+            "SpaceMax",
+            "All-Around Cooling",
+            "Digital Inverter"
+          ],
+          "dimensions": {
+            "width": 762,
+            "height": 1780,
+            "depth": 715
+          }
+        },
+        {
+          "id": "rb10fsr4esr",
+          "modelName": "RB10FSR4ESR",
+          "name": "Samsung Digital Inverter 320L",
+          "capacity": 320,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rb4000-bmf-with-optimal-fresh-zone-rb27n4010s8sv-rb27n4010bu-sv-thumb-536798730.avif",
+          "description": "Tủ lạnh 24 inch nhỏ gọn với công nghệ True No Frost",
+          "price": 15990000,
+          "priceFormatted": "15.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox chống vân tay"],
+          "specs": [
+            "Dung tích: 320L (11.3 cu.ft)",
+            "Digital Inverter Compressor",
+            "True No Frost chống đóng băng",
+            "Easy Slide Shelf kệ trượt",
+            "Full Open Box ngăn đông mở rộng",
+            "Ngăn cửa chứa chai cao",
+            "LED chiếu sáng phía trên",
+            "Bảo hành máy nén 10 năm"
+          ],
+          "features": [
+            "True No Frost",
+            "Digital Inverter",
+            "Easy Slide Shelf",
+            "Full Open Box"
+          ],
+          "dimensions": {
+            "width": 610,
+            "height": 1700,
+            "depth": 670
+          }
+        },
+        {
+          "id": "rb34c675eb1",
+          "modelName": "RB34C675EB1",
+          "name": "Samsung SpaceMax 340L Smart",
+          "capacity": 340,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-ref-rb4000-387696-rb30n4190by-sv-thumb-536799796.avif",
+          "description": "Tủ lạnh thông minh kết nối SmartThings với AI Energy Mode",
+          "price": 16990000,
+          "priceFormatted": "16.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Đen"],
+          "specs": [
+            "Dung tích: 340L",
+            "SpaceMax™ tối ưu không gian lưu trữ",
+            "SmartThings AI Energy Mode",
+            "Kết nối WiFi điều khiển từ xa",
+            "All-Around Cooling",
+            "Digital Inverter",
+            "Ngăn rau quả Fresh Zone",
+            "Thiết kế hiện đại màu đen"
+          ],
+          "features": [
+            "SmartThings",
+            "AI Energy Mode",
+            "SpaceMax",
+            "WiFi Connected"
+          ],
+          "dimensions": {
+            "width": 595,
+            "height": 1850,
+            "depth": 668
+          }
+        },
+        {
+          "id": "rb12a300631",
+          "modelName": "RB12A300631",
+          "name": "Samsung Bespoke 340L Matte Grey",
+          "capacity": 340,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-ref-rb4000-565332-rb27n4020b1-sv-thumb-549159740.avif",
+          "description": "Tủ lạnh Bespoke 12 cu.ft với kính mờ sang trọng",
+          "price": 18490000,
+          "priceFormatted": "18.490.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Xám mờ"],
+          "specs": [
+            "Dung tích: 340L (12 cu.ft)",
+            "Thiết kế Bespoke cao cấp",
+            "Mặt kính mờ sang trọng",
+            "Counter Depth phù hợp không gian nhỏ",
+            "Digital Inverter",
+            "LED chiếu sáng",
+            "Ngăn đông rộng rãi",
+            "Lắp đặt yêu cầu ống nước"
+          ],
+          "features": [
+            "Bespoke Design",
+            "Matte Glass",
+            "Counter Depth",
+            "Space Efficient"
+          ],
+          "dimensions": {
+            "width": 594,
+            "height": 1750,
+            "depth": 650
+          }
+        },
+        {
+          "id": "rb6000d",
+          "modelName": "RB6000D",
+          "name": "Samsung SpaceMax 458L Refined Inox",
+          "capacity": 458,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh 16.2 cu.ft với công nghệ SpaceMax tối ưu không gian",
+          "price": 19990000,
+          "priceFormatted": "19.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Inox tinh tế"],
+          "specs": [
+            "Dung tích: 458L (16.2 cu.ft)",
+            "SpaceMax Technology tăng không gian",
+            "All-Around Cooling",
+            "Digital Inverter tiết kiệm năng lượng",
+            "Ngăn rau quả Big Box",
+            "Ngăn đông rộng với ngăn kéo",
+            "Thiết kế inox tinh tế",
+            "Ưu đãi giảm đến 21%"
+          ],
+          "features": [
+            "SpaceMax",
+            "All-Around Cooling",
+            "Big Box Crisper",
+            "Energy Efficient"
+          ],
+          "dimensions": {
+            "width": 700,
+            "height": 1800,
+            "depth": 720
+          }
+        },
+        {
+          "id": "rb30n4180s8",
+          "modelName": "RB30N4180S8",
+          "name": "Samsung All-Around Cooling 307L",
+          "capacity": 307,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh tiết kiệm năng lượng với làm lạnh vòng quanh",
+          "price": 13990000,
+          "priceFormatted": "13.990.000đ",
+          "energyRating": "4 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 307L",
+            "All-Around Cooling làm lạnh đều",
+            "Digital Inverter",
+            "No Frost chống đóng băng",
+            "Ngăn rau quả Fresh Zone",
+            "Kệ kính chịu lực",
+            "LED chiếu sáng",
+            "Tiết kiệm điện năng"
+          ],
+          "features": [
+            "All-Around Cooling",
+            "Digital Inverter",
+            "No Frost",
+            "Fresh Zone"
+          ],
+          "dimensions": {
+            "width": 600,
+            "height": 1780,
+            "depth": 650
+          }
+        },
+        {
+          "id": "rb38t775cb1",
+          "modelName": "RB38T775CB1",
+          "name": "Samsung SpaceMax 385L Smart",
+          "capacity": 385,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh thông minh với SpaceMax và SmartThings",
+          "price": 17990000,
+          "priceFormatted": "17.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Đen"],
+          "specs": [
+            "Dung tích: 385L",
+            "SpaceMax tối đa không gian",
+            "SmartThings kết nối WiFi",
+            "AI Energy Mode",
+            "All-Around Cooling",
+            "Optimal Fresh+ Zone",
+            "Digital Inverter",
+            "Thiết kế hiện đại"
+          ],
+          "features": [
+            "SpaceMax",
+            "SmartThings",
+            "AI Energy",
+            "Optimal Fresh+"
+          ],
+          "dimensions": {
+            "width": 595,
+            "height": 1927,
+            "depth": 668
+          }
+        },
+        {
+          "id": "rb33n300nsa",
+          "modelName": "RB33N300NSA",
+          "name": "Samsung No Frost 328L",
+          "capacity": 328,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh cơ bản với công nghệ No Frost đáng tin cậy",
+          "price": 12490000,
+          "priceFormatted": "12.490.000đ",
+          "energyRating": "3 sao",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 328L",
+            "No Frost chống đóng băng",
+            "Digital Inverter",
+            "All-Around Cooling",
+            "Ngăn rau quả lớn",
+            "Kệ điều chỉnh linh hoạt",
+            "LED chiếu sáng",
+            "Giá trị tốt"
+          ],
+          "features": [
+            "No Frost",
+            "Digital Inverter",
+            "All-Around Cooling",
+            "Value for Money"
+          ],
+          "dimensions": {
+            "width": 600,
+            "height": 1850,
+            "depth": 670
+          }
+        },
+        {
+          "id": "rb37j5000sa",
+          "modelName": "RB37J5000SA",
+          "name": "Samsung Twin Cooling Plus 367L",
+          "capacity": 367,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh Twin Cooling Plus giữ độ ẩm tối ưu",
+          "price": 15990000,
+          "priceFormatted": "15.990.000đ",
+          "energyRating": "4 sao",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 367L",
+            "Twin Cooling Plus độc lập 2 dàn",
+            "Duy trì độ ẩm 70%",
+            "No Frost",
+            "Digital Inverter",
+            "Ngăn rau quả Fresh Zone",
+            "Kệ kính chịu lực",
+            "Thiết kế sang trọng"
+          ],
+          "features": [
+            "Twin Cooling Plus",
+            "70% Humidity",
+            "No Frost",
+            "Digital Inverter"
+          ],
+          "dimensions": {
+            "width": 595,
+            "height": 2010,
+            "depth": 675
+          }
+        },
+        {
+          "id": "rb31fdrndsa",
+          "modelName": "RB31FDRNDSA",
+          "name": "Samsung No Frost 310L Classic",
+          "capacity": 310,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh cơ bản với độ tin cậy cao, giá phải chăng",
+          "price": 11990000,
+          "priceFormatted": "11.990.000đ",
+          "energyRating": "3 sao",
+          "color": ["Bạc"],
+          "specs": [
+            "Dung tích: 310L",
+            "No Frost chống đóng băng",
+            "Digital Inverter",
+            "Làm lạnh đồng đều",
+            "Ngăn rau quả lớn",
+            "Ngăn đông rộng",
+            "LED chiếu sáng",
+            "Giá cả hợp lý"
+          ],
+          "features": [
+            "No Frost",
+            "Digital Inverter",
+            "Reliable",
+            "Affordable"
+          ],
+          "dimensions": {
+            "width": 595,
+            "height": 1850,
+            "depth": 650
+          }
+        }
+      ]
+    },
+    {
+      "id": "french-door",
+      "name": "Tủ Lạnh 4 Cánh",
+      "nameEn": "French Door / Multi-Door",
+      "description": "Tủ lạnh 4 cánh cao cấp với thiết kế sang trọng, dung tích lớn, công nghệ tiên tiến và nhiều tính năng thông minh",
+      "series": "RF Series",
+      "products": [
+        {
+          "id": "rf29db9900qd",
+          "modelName": "RF29DB9900QD",
+          "name": "Samsung Bespoke 4-Door Flex 820L AI Family Hub+",
+          "capacity": 820,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs90f-basic-rs70f65q3fsv-thumb-545198492.avif",
+          "description": "Tủ lạnh cao cấp nhất với AI Family Hub màn hình lớn nhất ngành",
+          "price": 84990000,
+          "priceFormatted": "84.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox", "Đen", "Trắng", "Xanh"],
+          "specs": [
+            "Dung tích: 820L (29 cu.ft)",
+            "AI Family Hub+ màn hình 21.5 inch",
+            "AI Vision Inside nhận diện thực phẩm",
+            "FlexZone 4 chế độ nhiệt độ",
+            "Beverage Center lấy nước nhanh",
+            "Auto Open Door mở tự động",
+            "Dual Ice Maker 2 máy làm đá",
+            "Thiết kế Bespoke tùy chỉnh màu sắc"
+          ],
+          "features": [
+            "AI Family Hub+",
+            "AI Vision Inside",
+            "FlexZone",
+            "Auto Open Door",
+            "Dual Ice Maker"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1854,
+            "depth": 870
+          }
+        },
+        {
+          "id": "rf65dg9h0eb1",
+          "modelName": "RF65DG9H0EB1",
+          "name": "Samsung French AI 636L Family Hub",
+          "capacity": 636,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs80f-9-inch-ai-home-rs90f65d2fsv-thumb-545198321.avif",
+          "description": "Tủ lạnh French Door 2024 với Family Hub AI Vision thông minh",
+          "price": 69990000,
+          "priceFormatted": "69.990.000đ",
+          "energyRating": "A++",
+          "color": ["Đen"],
+          "specs": [
+            "Dung tích: 636L",
+            "Family Hub AI Vision",
+            "Nhận diện thực phẩm tự động",
+            "Gợi ý công thức nấu ăn",
+            "SpaceMax Technology",
+            "Triple Cooling System",
+            "FlexZone đa năng",
+            "Kết nối SmartThings"
+          ],
+          "features": [
+            "AI Vision",
+            "Family Hub",
+            "Triple Cooling",
+            "SpaceMax"
+          ],
+          "dimensions": {
+            "width": 912,
+            "height": 1780,
+            "depth": 716
+          }
+        },
+        {
+          "id": "rf28t5f01sr",
+          "modelName": "RF28T5F01SR",
+          "name": "Samsung 36\" Family Hub 793L French Door",
+          "capacity": 793,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs90f-aod-rs80f65j2bsv-thumb-545273188.avif",
+          "description": "Tủ lạnh Family Hub 28 cu.ft với màn hình cảm ứng thông minh",
+          "price": 72990000,
+          "priceFormatted": "72.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 793L (28 cu.ft)",
+            "Family Hub màn hình cảm ứng",
+            "Xem TV, nghe nhạc, duyệt web",
+            "Camera nội thất xem từ xa",
+            "FlexZone 4 chế độ",
+            "Twin Cooling Plus",
+            "Water & Ice Dispenser",
+            "Finger Print Resistant"
+          ],
+          "features": [
+            "Family Hub",
+            "Internal Camera",
+            "FlexZone",
+            "Twin Cooling Plus"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1778,
+            "depth": 875
+          }
+        },
+        {
+          "id": "rf31cg7400sr",
+          "modelName": "RF31CG7400SR",
+          "name": "Samsung 30 cu.ft Mega Capacity 4 Loại Đá",
+          "capacity": 850,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs90f-basic-546898-rs70f65k2fsv-thumb-546217147.avif",
+          "description": "Tủ lạnh siêu lớn với 4 loại đá và dung tích khổng lồ",
+          "price": 62990000,
+          "priceFormatted": "62.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox"],
+          "specs": [
+            "Dung tích: 850L (30 cu.ft)",
+            "Mega Capacity siêu rộng",
+            "4 loại đá: viên, Ice Bites, cong, nghiền",
+            "External Ice Dispenser",
+            "FlexZone đa chức năng",
+            "Twin Cooling Plus",
+            "Cửa French Door hiện đại",
+            "Tiết kiệm năng lượng"
+          ],
+          "features": [
+            "Mega Capacity",
+            "4 Types of Ice",
+            "External Dispenser",
+            "FlexZone"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1778,
+            "depth": 875
+          }
+        },
+        {
+          "id": "rf23db9600ql",
+          "modelName": "RF23DB9600QL",
+          "name": "Samsung Bespoke 4-Door Flex 651L Beverage Center",
+          "capacity": 651,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs4000dc-side-by-side-with-large-capacity-527730-rs57dg410eb4sv-thumb-544141369.avif",
+          "description": "Tủ lạnh Bespoke với Beverage Center lấy nước tiện lợi",
+          "price": 64990000,
+          "priceFormatted": "64.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox chống vân tay"],
+          "specs": [
+            "Dung tích: 651L (23 cu.ft)",
+            "Counter Depth thiết kế âm tủ",
+            "Beverage Center 2 chế độ nhiệt độ",
+            "FlexZone linh hoạt",
+            "Auto Fill Water Pitcher tự động đổ nước",
+            "Dual Ice Maker",
+            "Thiết kế Bespoke sang trọng",
+            "Tiết kiệm 32%"
+          ],
+          "features": [
+            "Beverage Center",
+            "FlexZone",
+            "Counter Depth",
+            "Dual Ice Maker"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1778,
+            "depth": 795
+          }
+        },
+        {
+          "id": "rf48a4010b4",
+          "modelName": "RF48A4010B4",
+          "name": "Samsung French Door 466L Twin Cooling Plus",
+          "capacity": 466,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-rs4000dc-side-by-side-with-large-capacity-rs57dg400em9sv-thumb-542837712.avif",
+          "description": "Tủ lạnh French Door cơ bản với Twin Cooling Plus",
+          "price": 35990000,
+          "priceFormatted": "35.990.000đ",
+          "energyRating": "A++",
+          "color": ["Đen nhám"],
+          "specs": [
+            "Dung tích: 466L (326L + 140L)",
+            "Twin Cooling Plus",
+            "No Frost chống đóng băng",
+            "3 kệ kính, 2 ngăn rau quả",
+            "6 ngăn cửa, ngăn đông 4 kệ",
+            "Water Dispenser lấy nước",
+            "Tiêu thụ điện 311 kWh/năm",
+            "Độ ồn 42 dBA"
+          ],
+          "features": [
+            "Twin Cooling Plus",
+            "No Frost",
+            "Water Dispenser",
+            "Energy A++"
+          ],
+          "dimensions": {
+            "width": 833,
+            "height": 1793,
+            "depth": 740
+          }
+        },
+        {
+          "id": "rs64t5f01b4",
+          "modelName": "RS64T5F01B4",
+          "name": "Samsung Side-by-Side Family Hub 641L",
+          "capacity": 641,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-345-l-top-mount-freezer-and-9-5-kg-top-load-washing-machine-and-23l-microwave-grill-series-and-360w-canister-vacuum-cleaner-f-svwedding1-thumb-545300150.avif",
+          "description": "Tủ lạnh Side-by-Side với Family Hub và camera nội thất",
+          "price": 58990000,
+          "priceFormatted": "58.990.000đ",
+          "energyRating": "5 sao",
+          "color": ["Đen nhám"],
+          "specs": [
+            "Dung tích: 641L (23.2 cu.ft)",
+            "Family Hub màn hình thông minh",
+            "Camera bên trong xem từ xa",
+            "Family Board chia sẻ gia đình",
+            "Recipes gợi ý công thức",
+            "SpaceMax Technology",
+            "All-Around Cooling",
+            "Water Dispenser không ống nước"
+          ],
+          "features": [
+            "Family Hub",
+            "Internal Camera",
+            "Family Board",
+            "SpaceMax"
+          ],
+          "dimensions": {
+            "width": 912,
+            "height": 1780,
+            "depth": 716
+          }
+        },
+        {
+          "id": "rf24bb6200",
+          "modelName": "RF24BB6200",
+          "name": "Samsung 4-Door French 597L Triple Cooling",
+          "capacity": 597,
+          "capacityUnit": "L",
+          "image": "/images/fridges/vn-583l-side-by-side-refrigerator-and-12kg-ai-ecobubble-front-load-washing-machine-and-23l-bespoke-microwave-and-430w-bagless-vacuum-cleaner-f-svwedding2-thumb-545300463.avif",
+          "description": "Tủ lạnh 4 cánh với hệ thống làm lạnh 3 chiều",
+          "price": 45990000,
+          "priceFormatted": "45.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox", "Đen"],
+          "specs": [
+            "Dung tích: 597L (21.1 cu.ft)",
+            "Triple Cooling System 3 dàn lạnh",
+            "FlexZone đa chế độ",
+            "External Water & Ice",
+            "Digital Inverter",
+            "LED chiếu sáng",
+            "Thiết kế hiện đại",
+            "Tiết kiệm năng lượng"
+          ],
+          "features": [
+            "Triple Cooling",
+            "FlexZone",
+            "External Dispenser",
+            "Energy Star"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1778,
+            "depth": 875
+          }
+        },
+        {
+          "id": "rf29db9700ql",
+          "modelName": "RF29DB9700QL",
+          "name": "Samsung Bespoke 4-Door Flex 820L Beverage Zone",
+          "capacity": 820,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh Bespoke cao cấp với Beverage Zone 2 nhiệt độ",
+          "price": 76990000,
+          "priceFormatted": "76.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox", "Trắng", "Đen"],
+          "specs": [
+            "Dung tích: 820L (29 cu.ft)",
+            "Beverage Zone 2 chế độ nhiệt độ",
+            "FlexZone chuyển đổi linh hoạt",
+            "Auto Open Door",
+            "Dual Auto Ice Maker",
+            "Beverage Center nhanh",
+            "Thiết kế Bespoke tùy chỉnh",
+            "Tiết kiệm 38%"
+          ],
+          "features": [
+            "Beverage Zone",
+            "FlexZone",
+            "Auto Open Door",
+            "Bespoke Design"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1854,
+            "depth": 870
+          }
+        },
+        {
+          "id": "rf23db9700ql",
+          "modelName": "RF23DB9700QL",
+          "name": "Samsung Bespoke Counter Depth 651L",
+          "capacity": 651,
+          "capacityUnit": "L",
+          "image": "/images/fridges/placeholder-fridge.jpg",
+          "description": "Tủ lạnh âm tủ với Beverage Zone và Auto Fill",
+          "price": 67990000,
+          "priceFormatted": "67.990.000đ",
+          "energyRating": "Energy Star",
+          "color": ["Inox chống vân tay"],
+          "specs": [
+            "Dung tích: 651L (23 cu.ft)",
+            "Counter Depth thiết kế âm tủ",
+            "Beverage Zone 2 nhiệt độ",
+            "Auto Fill Water Pitcher",
+            "FlexZone linh hoạt",
+            "Dual Ice Maker",
+            "Beverage Center",
+            "Tiết kiệm 38%"
+          ],
+          "features": [
+            "Counter Depth",
+            "Beverage Zone",
+            "Auto Fill",
+            "FlexZone"
+          ],
+          "dimensions": {
+            "width": 908,
+            "height": 1778,
+            "depth": 795
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-31",
+    "currency": "VND",
+    "brand": "Samsung",
+    "country": "Vietnam",
+    "totalProducts": 30,
+    "description": "Dữ liệu tủ lạnh Samsung bao gồm 3 loại: Ngăn đông trên (Top Freezer), Ngăn đông dưới (Bottom Freezer), và 4 cánh (French Door/Multi-Door). Mỗi loại có 10 sản phẩm với thông tin chi tiết về dung tích, giá cả, tính năng và thông số kỹ thuật."
+  }
+}

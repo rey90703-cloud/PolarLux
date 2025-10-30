@@ -1,6 +1,8 @@
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
+import RotatingText from "@/components/RotatingText";
+import FridgeModel3D from "@/components/FridgeModel3D";
 
 const Hero = () => {
   const scrollToCollection = () => {
@@ -13,10 +15,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[120px] md:pt-[140px]"
     >
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
           alt="Modern kitchen with premium refrigerator"
@@ -26,38 +28,58 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto space-y-6 lg:space-y-8 animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white text-balance leading-tight">
-            Công nghệ làm lạnh
-            <br />
-            <span className="bg-gradient-to-r from-primary-light to-secondary bg-clip-text text-transparent">
-              Tương lai
-            </span>
-          </h1>
-          
-          <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto text-balance">
-            Trải nghiệm sự kết hợp hoàn hảo giữa thiết kế hiện đại và công nghệ tiên tiến.
-            Tiết kiệm năng lượng, thân thiện môi trường.
-          </p>
+      <div className="relative z-10 container mx-auto px-4 w-full">
+        <div className="grid lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+          {/* Left: Text Content */}
+          <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white text-balance leading-relaxed overflow-visible">
+              Tủ Lạnh Samsung
+              <br />
+              <span className="inline-block overflow-hidden relative" style={{ minHeight: '1.5em', marginTop: '0.5rem' }}>
+                <RotatingText
+                  texts={['Bespoke AI', 'Twin Cooling', 'Family Hub', 'Digital Inverter']}
+                  mainClassName="justify-center lg:justify-start text-cyan-400"
+                  elementLevelClassName="text-cyan-400"
+                  staggerFrom="last"
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-visible"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2500}
+                />
+              </span>
+            </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={scrollToCollection}
-              className="shadow-hover"
-            >
-              Xem bộ sưu tập
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-white text-white hover:bg-white hover:text-primary"
-            >
-              Tìm hiểu thêm
-            </Button>
+            <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto lg:mx-0 text-balance">
+              Công nghệ AI tiên tiến, tiết kiệm điện vượt trội. 
+              30 mẫu tủ lạnh chính hãng từ ngăn đông trên, dưới đến 4 cánh cao cấp.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
+              <Button
+                variant="hero"
+                size="lg"
+                onClick={scrollToCollection}
+                className="shadow-hover"
+              >
+                Xem bộ sưu tập
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+                className="border-white text-white hover:bg-white hover:text-primary"
+              >
+                Tìm hiểu thêm
+              </Button>
+            </div>
+          </div>
+
+          {/* Right: 3D Fridge Model */}
+          <div className="relative animate-fade-in-up animation-delay-200 hidden lg:flex justify-center items-center">
+            <FridgeModel3D />
           </div>
         </div>
 

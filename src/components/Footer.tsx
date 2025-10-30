@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,10 +16,15 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 flex items-center justify-center bg-primary rounded-lg">
-                <span className="text-white font-bold text-xl">μ</span>
-              </div>
-              <span className="font-semibold text-lg">μ-Fridge</span>
+              <img 
+                src={logo} 
+                alt="PolarLux Logo" 
+                className="w-10 h-10 object-contain"
+              />
+              <span className="font-semibold text-lg">
+                <span style={{ color: '#3b93bd' }}>Polar</span>
+                <span style={{ color: '#C0C0C0' }}>Lux</span>
+              </span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
               Công nghệ làm lạnh thông minh cho tương lai bền vững. 
@@ -52,10 +58,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Sản phẩm</h3>
             <ul className="space-y-3 text-white/70 text-sm">
-              <li>μ-French Pro</li>
-              <li>μ-Side Elite</li>
-              <li>μ-Smart Connect</li>
-              <li>μ-Prestige 4D</li>
+              <li>PolarLux French Pro</li>
+              <li>PolarLux Side Elite</li>
+              <li>PolarLux Smart Connect</li>
+              <li>PolarLux Prestige 4D</li>
             </ul>
           </div>
 
@@ -93,7 +99,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} μ-Fridge. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PolarLux. All rights reserved.</p>
         </div>
       </div>
     </footer>
