@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import RotatingText from "@/components/RotatingText";
 import FridgeModel3D from "@/components/FridgeModel3D";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   const scrollToCollection = () => {
     const element = document.getElementById("collection");
     if (element) {
@@ -33,7 +36,7 @@ const Hero = () => {
           {/* Left: Text Content */}
           <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white text-balance leading-relaxed overflow-visible">
-              Tủ Lạnh Samsung
+              {t('hero.title')} <span className="text-primary">{t('hero.titleHighlight')}</span>
               <br />
               <span className="inline-block overflow-hidden relative" style={{ minHeight: '1.5em', marginTop: '0.5rem' }}>
                 <RotatingText
@@ -53,7 +56,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto lg:mx-0 text-balance">
-              Bứt phá với công nghệ AI tiên tiến, tiết kiệm điện vượt trội. Bộ sưu tập 30 mẫu tủ lạnh Samsung chính hãng, từ ngăn đông truyền thống đến siêu phẩm 4 cánh sang trọng.
+              {t('hero.description')}
             </p>
 
             {/* Benefits */}
@@ -63,14 +66,14 @@ const Hero = () => {
                   <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
                 </svg>
-                <span className="font-semibold">Miễn phí giao hàng</span>
+                <span className="font-semibold">{t('hero.freeShipping')}</span>
               </div>
               <div className="flex items-center gap-2 bg-blue-500/20 text-blue-400 px-4 py-2 rounded-full backdrop-blur-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
                   <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
                 </svg>
-                <span className="font-semibold">Trả góp 0%</span>
+                <span className="font-semibold">{t('hero.installment')}</span>
               </div>
             </div>
 
@@ -81,7 +84,7 @@ const Hero = () => {
                 onClick={scrollToCollection}
                 className="shadow-hover"
               >
-                Xem bộ sưu tập
+                {t('hero.ctaExplore')}
               </Button>
               <Button
                 variant="outline"
@@ -89,7 +92,7 @@ const Hero = () => {
                 onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
                 className="border-white text-white hover:bg-white hover:text-primary"
               >
-                Tìm hiểu thêm
+                {t('hero.ctaLearn')}
               </Button>
             </div>
           </div>

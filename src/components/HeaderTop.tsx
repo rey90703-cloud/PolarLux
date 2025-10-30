@@ -2,10 +2,19 @@ import { Mail, User, ShoppingCart, ChevronDown, LogOut } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "@/contexts/CartContext";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 
 const HeaderTop = () => {
+  const { t, i18n } = useTranslation();
   const [isLangOpen, setIsLangOpen] = useState(false);
   const { getTotalItems, setCartOpen, setLoginOpen, user, logout } = useCart();
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+    setIsLangOpen(false);
+  };
+
+  const currentLang = i18n.language;
 
   return (
     <div className="bg-foreground text-white py-2 text-sm">
@@ -27,22 +36,22 @@ const HeaderTop = () => {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
-                <span className="text-xs">🇬🇧</span>
-                <span className="hidden sm:inline">English</span>
+                <span className="text-xs">{currentLang === 'vi' ? '🇻🇳' : '🇬🇧'}</span>
+                <span className="hidden sm:inline">{currentLang === 'vi' ? 'Tiếng Việt' : 'English'}</span>
                 <ChevronDown className="w-3 h-3" />
               </button>
               
               {isLangOpen && (
                 <div className="absolute top-full right-0 mt-2 bg-white text-foreground rounded-md shadow-lg py-2 min-w-[120px] z-50">
                   <button
-                    onClick={() => setIsLangOpen(false)}
+                    onClick={() => changeLanguage('vi')}
                     className="w-full px-4 py-2 text-left hover:bg-gray-100 transition-colors flex items-center gap-2"
                   >
                     <span className="text-xs">🇻🇳</span>
-                    <span>VietNam</span>
+                    <span>Tiếng Việt</span>
                   </button>
                   <button
-                    onClick={() => setIsLangOpen(false)}
+                    onClick={() => changeLanguage('en')}
                     className="w-full px-4 py-2 text-left hover:bg-gray-100 transition-colors flex items-center gap-2"
                   >
                     <span className="text-xs">🇬🇧</span>
@@ -56,12 +65,12 @@ const HeaderTop = () => {
             {user ? (
               <div className="flex items-center gap-3">
                 <span className="hidden sm:inline text-xs">
-                  Xin chào, {user.fullName}
+                  {t('auth.welcome', { name: user.fullName })}
                 </span>
                 <button
                   onClick={logout}
                   className="flex items-center gap-2 hover:text-primary transition-colors"
-                  title="Đăng xuất"
+                  title={t('nav.logout')}
                 >
                   <LogOut className="w-4 h-4" />
                 </button>
@@ -72,7 +81,7 @@ const HeaderTop = () => {
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <User className="w-4 h-4" />
-                <span className="hidden sm:inline">Đăng nhập</span>
+                <span className="hidden sm:inline">{t('nav.login')}</span>
               </button>
             )}
 
@@ -89,7 +98,7 @@ const HeaderTop = () => {
                   </Badge>
                 )}
               </div>
-              <span className="hidden sm:inline">Giỏ hàng</span>
+              <span className="hidden sm:inline">{t('cart.title')}</span>
             </button>
           </div>
         </div>

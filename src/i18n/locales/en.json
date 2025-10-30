@@ -1,0 +1,219 @@
+{
+  "nav": {
+    "home": "Home",
+    "collection": "Products",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Samsung",
+    "titleHighlight": "Refrigerators",
+    "subtitle": "Advanced AI Technology",
+    "description": "Break through with advanced AI technology and superior energy savings. A collection of 30 authentic Samsung refrigerators, from traditional top freezers to luxurious 4-door masterpieces.",
+    "ctaExplore": "Explore Now",
+    "ctaLearn": "Learn More",
+    "freeShipping": "Free Shipping",
+    "installment": "0% Installment"
+  },
+  "collection": {
+    "title": "Samsung",
+    "titleHighlight": "Collection",
+    "description": "Discover 30 authentic Samsung refrigerators suitable for every family need",
+    "search": "Search products...",
+    "resultsFound": "Found {{count}} products",
+    "priceRange": {
+      "low": "LOW (Under 15M)",
+      "medium": "MEDIUM (15-40M)",
+      "high": "HIGH (Over 40M)"
+    },
+    "specs": {
+      "capacity": "Capacity",
+      "type": "Type",
+      "energyRating": "Energy Rating",
+      "inverter": "Inverter",
+      "smartControl": "Smart Control"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "originalPrice": "Original Price",
+    "currentPrice": "Current Price",
+    "save": "Save {{amount}}",
+    "reviews": "{{count}} reviews",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "viewDetails": "View Details",
+    "close": "Close"
+  },
+  "gallery": {
+    "title": "Design",
+    "titleHighlight": "Inspiration",
+    "description": "Explore the perfect beauty of Samsung refrigerators in real living spaces"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Us",
+    "description": "We are proud to be the official distributor of premium Samsung refrigerators in Vietnam",
+    "feature1Title": "Top Quality",
+    "feature1Desc": "100% commitment to authentic products with quality guaranteed by Samsung",
+    "feature2Title": "Comprehensive Warranty",
+    "feature2Desc": "Extended warranty coverage and 24/7 technical support",
+    "feature3Title": "Fast Delivery",
+    "feature3Desc": "Free shipping and on-site installation within 24 hours",
+    "stats": {
+      "customers": "Satisfied Customers",
+      "products": "Diverse Products",
+      "experience": "Years of Experience",
+      "warranty": "Official Warranty"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Answers to common questions about Samsung refrigerators",
+    "questions": {
+      "q1": {
+        "question": "How does Inverter technology work on Samsung refrigerators?",
+        "answer": "Digital Inverter technology helps flexibly adjust compressor speed according to cooling needs, saving up to 50% electricity, reducing noise, and extending compressor lifespan up to 21 years."
+      },
+      "q2": {
+        "question": "Do Samsung refrigerators have SmartThings connectivity?",
+        "answer": "High-end refrigerator lines integrate SmartThings, allowing remote control via smartphone, notifications when the door is left open, and food status monitoring."
+      },
+      "q3": {
+        "question": "What is Samsung's warranty policy?",
+        "answer": "Samsung refrigerators are covered by a 2-year full warranty, 10 years for Inverter compressor. Official warranty at over 1000+ service centers nationwide."
+      },
+      "q4": {
+        "question": "Are Samsung refrigerators energy-efficient?",
+        "answer": "With Digital Inverter technology and energy-saving certification, Samsung refrigerators only consume 0.6-1.2 kWh/day, saving up to 50% compared to regular refrigerators."
+      },
+      "q5": {
+        "question": "How to choose the right refrigerator capacity?",
+        "answer": "Family of 2-3: 150-250L | Family of 4-5: 300-400L | Family of 6+ or high freezing needs: 500L+. Choose a capacity 20% larger than current needs."
+      },
+      "q6": {
+        "question": "What is Twin Cooling Plus technology?",
+        "answer": "Twin Cooling Plus uses 2 separate cooling systems for refrigerator and freezer compartments, maintaining optimal 70% humidity, preventing odor mixing, keeping food fresh twice as long."
+      }
+    }
+  },
+  "chat": {
+    "title": "Online Support",
+    "placeholder": "Type a message...",
+    "send": "Send",
+    "greeting": "Hello! How can I help you?",
+    "quickReplies": {
+      "advice": "Refrigerator consultation",
+      "warranty": "Warranty policy",
+      "order": "Check order"
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Cart is empty",
+    "emptyDescription": "Add products to cart to continue shopping",
+    "items": "{{count}} items",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "freeShipping": "Free",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "checkout": {
+    "title": "Order Information",
+    "customerInfo": "Customer Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "district": "District",
+    "ward": "Ward",
+    "notes": "Order Notes",
+    "notesPlaceholder": "Delivery time, specific address...",
+    "paymentMethod": "Payment Method",
+    "cod": "Cash on Delivery (COD)",
+    "bankTransfer": "Bank Transfer",
+    "creditCard": "Credit/Debit Card",
+    "momo": "MoMo Wallet",
+    "orderSummary": "Order Summary",
+    "placeOrder": "Place Order",
+    "cancel": "Cancel",
+    "validation": {
+      "nameRequired": "Please enter full name",
+      "nameMin": "Name must be at least 2 characters",
+      "emailRequired": "Please enter email",
+      "emailInvalid": "Invalid email",
+      "phoneRequired": "Please enter phone number",
+      "phoneInvalid": "Phone number must be 10 digits",
+      "addressRequired": "Please enter address",
+      "cityRequired": "Please select city",
+      "districtRequired": "Please select district",
+      "wardRequired": "Please select ward"
+    },
+    "success": "Order placed successfully! We will contact you as soon as possible."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "confirmPassword": "Confirm Password",
+    "loginButton": "Login",
+    "registerButton": "Register",
+    "welcome": "Welcome, {{name}}!",
+    "validation": {
+      "emailRequired": "Please enter email",
+      "emailInvalid": "Invalid email",
+      "passwordRequired": "Please enter password",
+      "passwordMin": "Password must be at least 6 characters",
+      "nameRequired": "Please enter full name",
+      "phoneRequired": "Please enter phone number",
+      "phoneInvalid": "Invalid phone number",
+      "confirmPasswordRequired": "Please confirm password",
+      "passwordsNotMatch": "Passwords do not match"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "titleHighlight": "Us",
+    "description": "We are always ready to support you 24/7",
+    "phone": "Hotline",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Working Hours",
+    "hoursValue": "8:00 AM - 10:00 PM (Monday - Sunday)"
+  },
+  "footer": {
+    "description": "Official distributor of premium Samsung refrigerators in Vietnam",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Information",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 PolarLux. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "all": "All"
+  }
+}
