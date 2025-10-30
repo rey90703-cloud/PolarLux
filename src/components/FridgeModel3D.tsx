@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import '@google/model-viewer';
+import modelUrl from '@/assets/base_basic_pbr.glb?url';
 
 export default function FridgeModel3D() {
   const modelViewerRef = useRef<HTMLElement>(null);
@@ -12,7 +13,7 @@ export default function FridgeModel3D() {
     <div className="w-full h-[500px] lg:h-[600px] relative">
       <model-viewer
         ref={modelViewerRef}
-        src="/src/assets/base_basic_pbr.glb"
+        src={modelUrl}
         alt="Premium Smart Refrigerator 3D Model"
         auto-rotate
         camera-controls
