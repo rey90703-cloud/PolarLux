@@ -4,9 +4,11 @@ import About from "@/components/About";
 import Collection from "@/components/Collection";
 import Technology from "@/components/Technology";
 import Gallery from "@/components/Gallery";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Cart from "@/components/Cart";
 import LoginModal from "@/components/LoginModal";
+import ChatSupport from "@/components/ChatSupport";
 
 const Index = () => {
   return (
@@ -17,9 +19,11 @@ const Index = () => {
       <Collection />
       <Technology />
       <Gallery />
+      <FAQ />
       <Footer />
       <Cart />
       <LoginModal />
+      <ChatSupport />
     </div>
   );
 };

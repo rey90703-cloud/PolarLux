@@ -53,9 +53,26 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto lg:mx-0 text-balance">
-              Công nghệ AI tiên tiến, tiết kiệm điện vượt trội. 
-              30 mẫu tủ lạnh chính hãng từ ngăn đông trên, dưới đến 4 cánh cao cấp.
+              Bứt phá với công nghệ AI tiên tiến, tiết kiệm điện vượt trội. Bộ sưu tập 30 mẫu tủ lạnh Samsung chính hãng, từ ngăn đông truyền thống đến siêu phẩm 4 cánh sang trọng.
             </p>
+
+            {/* Benefits */}
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm md:text-base mb-4">
+              <div className="flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-2 rounded-full backdrop-blur-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                </svg>
+                <span className="font-semibold">Miễn phí giao hàng</span>
+              </div>
+              <div className="flex items-center gap-2 bg-blue-500/20 text-blue-400 px-4 py-2 rounded-full backdrop-blur-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
+                </svg>
+                <span className="font-semibold">Trả góp 0%</span>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
               <Button
