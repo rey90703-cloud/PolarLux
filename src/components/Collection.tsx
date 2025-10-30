@@ -8,6 +8,12 @@ import type { RefrigeratorProduct } from "@/types/refrigerator.types";
 import { ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
 
+// Helper function to get correct image path for GitHub Pages
+const getImagePath = (imagePath: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${imagePath.startsWith('/') ? imagePath.slice(1) : imagePath}`;
+};
+
 const Collection = () => {
   const { data, isLoading, error } = useRefrigerators();
   const { addToCart, setCartOpen } = useCart();
@@ -124,7 +130,7 @@ const Collection = () => {
                 {/* Image */}
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img
-                    src={fridge.image}
+                    src={getImagePath(fridge.image)}
                     alt={fridge.name}
                     className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -198,7 +204,7 @@ const Collection = () => {
               <div className="space-y-6">
                 <div className="bg-muted rounded-lg p-6 flex items-center justify-center">
                   <img
-                    src={selectedFridge.image}
+                    src={getImagePath(selectedFridge.image)}
                     alt={selectedFridge.name}
                     className="max-h-96 object-contain"
                   />
