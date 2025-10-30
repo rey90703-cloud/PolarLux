@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Wind, Thermometer, Wifi, Battery } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Technology = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -25,27 +27,23 @@ const Technology = () => {
   const technologies = [
     {
       icon: Wind,
-      title: "Multi Air Flow",
-      description:
-        "Hệ thống luồng khí đa chiều phân phối đều nhiệt độ khắp ngăn tủ, giữ thực phẩm tươi lâu hơn.",
+      title: t('technology.multiAirFlow.title'),
+      description: t('technology.multiAirFlow.description'),
     },
     {
       icon: Thermometer,
-      title: "Smart Cooling",
-      description:
-        "Cảm biến thông minh tự động điều chỉnh nhiệt độ theo từng ngăn, tối ưu năng lượng.",
+      title: t('technology.smartCooling.title'),
+      description: t('technology.smartCooling.description'),
     },
     {
       icon: Wifi,
-      title: "IoT Connected",
-      description:
-        "Kết nối WiFi, điều khiển từ xa qua smartphone, nhận thông báo và cập nhật thông minh.",
+      title: t('technology.iotConnected.title'),
+      description: t('technology.iotConnected.description'),
     },
     {
       icon: Battery,
-      title: "Eco Inverter",
-      description:
-        "Công nghệ Inverter tiên tiến tiết kiệm điện đến 40%, vận hành êm ái, bền bỉ.",
+      title: t('technology.ecoInverter.title'),
+      description: t('technology.ecoInverter.description'),
     },
   ];
 
@@ -59,11 +57,11 @@ const Technology = () => {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-            Công nghệ
-            <span className="text-primary"> Nổi bật</span>
+            {t('technology.title')}
+            <span className="text-primary"> {t('technology.titleHighlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tích hợp những công nghệ tiên tiến nhất cho trải nghiệm sử dụng hoàn hảo
+            {t('technology.description')}
           </p>
         </div>
 

@@ -171,6 +171,9 @@
     "loginButton": "Login",
     "registerButton": "Register",
     "welcome": "Welcome, {{name}}!",
+    "noAccount": "Don't have an account?",
+    "registerNow": "Register now",
+    "haveAccount": "Already have an account?",
     "validation": {
       "emailRequired": "Please enter email",
       "emailInvalid": "Invalid email",
@@ -181,6 +184,27 @@
       "phoneInvalid": "Invalid phone number",
       "confirmPasswordRequired": "Please confirm password",
       "passwordsNotMatch": "Passwords do not match"
+    }
+  },
+  "technology": {
+    "title": "Advanced",
+    "titleHighlight": "Technology",
+    "description": "Integrated with cutting-edge technology for the perfect user experience",
+    "multiAirFlow": {
+      "title": "Multi Air Flow",
+      "description": "Multi-directional airflow system evenly distributes temperature throughout the compartments, keeping food fresh longer."
+    },
+    "smartCooling": {
+      "title": "Smart Cooling",
+      "description": "Smart sensors automatically adjust temperature for each compartment, optimizing energy consumption."
+    },
+    "iotConnected": {
+      "title": "IoT Connected",
+      "description": "WiFi connectivity, remote control via smartphone, smart notifications and updates."
+    },
+    "ecoInverter": {
+      "title": "Eco Inverter",
+      "description": "Advanced Inverter technology saves up to 40% electricity, operates quietly and durably."
     }
   },
   "contact": {

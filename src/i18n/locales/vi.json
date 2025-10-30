@@ -171,6 +171,9 @@
     "loginButton": "Đăng nhập",
     "registerButton": "Đăng ký",
     "welcome": "Xin chào, {{name}}!",
+    "noAccount": "Chưa có tài khoản?",
+    "registerNow": "Đăng ký ngay",
+    "haveAccount": "Đã có tài khoản?",
     "validation": {
       "emailRequired": "Vui lòng nhập email",
       "emailInvalid": "Email không hợp lệ",
@@ -181,6 +184,27 @@
       "phoneInvalid": "Số điện thoại không hợp lệ",
       "confirmPasswordRequired": "Vui lòng xác nhận mật khẩu",
       "passwordsNotMatch": "Mật khẩu không khớp"
+    }
+  },
+  "technology": {
+    "title": "Công nghệ",
+    "titleHighlight": "Nổi bật",
+    "description": "Tích hợp những công nghệ tiên tiến nhất cho trải nghiệm sử dụng hoàn hảo",
+    "multiAirFlow": {
+      "title": "Multi Air Flow",
+      "description": "Hệ thống luồng khí đa chiều phân phối đều nhiệt độ khắp ngăn tủ, giữ thực phẩm tươi lâu hơn."
+    },
+    "smartCooling": {
+      "title": "Smart Cooling",
+      "description": "Cảm biến thông minh tự động điều chỉnh nhiệt độ theo từng ngăn, tối ưu năng lượng."
+    },
+    "iotConnected": {
+      "title": "IoT Connected",
+      "description": "Kết nối WiFi, điều khiển từ xa qua smartphone, nhận thông báo và cập nhật thông minh."
+    },
+    "ecoInverter": {
+      "title": "Eco Inverter",
+      "description": "Công nghệ Inverter tiên tiến tiết kiệm điện đến 40%, vận hành êm ái, bền bỉ."
     }
   },
   "contact": {

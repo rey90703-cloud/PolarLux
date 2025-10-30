@@ -176,13 +176,13 @@ const LoginModal = () => {
               </Button>
 
               <p className="text-sm text-center text-muted-foreground">
-                Chưa có tài khoản?{" "}
+                {t('auth.noAccount')}{" "}
                 <button
                   type="button"
                   onClick={() => setActiveTab("register")}
                   className="text-primary hover:underline"
                 >
-                  Đăng ký ngay
+                  {t('auth.registerNow')}
                 </button>
               </p>
             </form>
@@ -269,13 +269,13 @@ const LoginModal = () => {
               </Button>
 
               <p className="text-sm text-center text-muted-foreground">
-                Đã có tài khoản?{" "}
+                {t('auth.haveAccount')}{" "}
                 <button
                   type="button"
                   onClick={() => setActiveTab("login")}
                   className="text-primary hover:underline"
                 >
-                  Đăng nhập
+                  {t('auth.loginButton')}
                 </button>
               </p>
             </form>

@@ -1,7 +1,10 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -27,20 +30,19 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Công nghệ làm lạnh thông minh cho tương lai bền vững. 
-              Tiết kiệm năng lượng, thân thiện môi trường.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Liên kết nhanh</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {[
-                { label: "Trang chủ", id: "hero" },
-                { label: "Giới thiệu", id: "about" },
-                { label: "Bộ sưu tập", id: "collection" },
-                { label: "Công nghệ", id: "technology" },
+                { label: t('nav.home'), id: "hero" },
+                { label: t('nav.about'), id: "about" },
+                { label: t('nav.collection'), id: "collection" },
+                { label: t('nav.gallery'), id: "gallery" },
               ].map((link) => (
                 <li key={link.id}>
                   <button
@@ -56,7 +58,7 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Sản phẩm</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('nav.collection')}</h3>
             <ul className="space-y-3 text-white/70 text-sm">
               <li>PolarLux French Pro</li>
               <li>PolarLux Side Elite</li>
@@ -67,7 +69,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Liên hệ</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -99,7 +101,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} PolarLux. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PolarLux. {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
