@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -31,19 +29,11 @@ const Gallery = () => {
   const images = [
     {
       src: gallery1,
-      alt: "Tủ lạnh trong không gian bếp hiện đại",
-    },
-    {
-      src: gallery2,
-      alt: "Thực phẩm tươi ngon được bảo quản",
+      alt: "Tủ lạnh Samsung Bespoke trong không gian bếp hiện đại",
     },
     {
       src: gallery3,
-      alt: "Màn hình cảm ứng thông minh",
-    },
-    {
-      src: gallery4,
-      alt: "Bếp sang trọng vào buổi tối",
+      alt: "Màn hình cảm ứng thông minh trên tủ lạnh Samsung",
     },
   ];
 
@@ -61,7 +51,7 @@ const Gallery = () => {
             <span className="text-primary"> Thiết kế</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Khám phá vẻ đẹp hoàn hảo của tủ lạnh μ-Fridge trong không gian sống thực tế
+            Khám phá vẻ đẹp hoàn hảo của tủ lạnh Samsung trong không gian sống thực tế
           </p>
         </div>
 
