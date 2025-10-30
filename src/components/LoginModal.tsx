@@ -9,36 +9,49 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
-const loginSchema = z.object({
-  email: z.string().email("Email không hợp lệ"),
-  password: z.string().min(6, "Mật khẩu phải có ít nhất 6 ký tự"),
+// Schemas will be created inside component to access t()
+const createLoginSchema = (t: any) => z.object({
+  email: z.string().email(t('auth.validation.emailInvalid')),
+  password: z.string().min(6, t('auth.validation.passwordMin')),
 });
 
-const registerSchema = z.object({
-  fullName: z.string().min(2, "Họ tên phải có ít nhất 2 ký tự"),
-  email: z.string().email("Email không hợp lệ"),
-  phone: z.string().regex(/^0[0-9]{9}$/, "Số điện thoại không hợp lệ"),
-  password: z.string().min(6, "Mật khẩu phải có ít nhất 6 ký tự"),
+const createRegisterSchema = (t: any) => z.object({
+  fullName: z.string().min(2, t('auth.validation.nameRequired')),
+  email: z.string().email(t('auth.validation.emailInvalid')),
+  phone: z.string().regex(/^0[0-9]{9}$/, t('auth.validation.phoneInvalid')),
+  password: z.string().min(6, t('auth.validation.passwordMin')),
   confirmPassword: z.string(),
 }).refine((data) => data.password === data.confirmPassword, {
-  message: "Mật khẩu xác nhận không khớp",
+  message: t('auth.validation.passwordsNotMatch'),
   path: ["confirmPassword"],
 });
 
-type LoginFormData = z.infer<typeof loginSchema>;
-type RegisterFormData = z.infer<typeof registerSchema>;
+type LoginFormData = {
+  email: string;
+  password: string;
+};
+
+type RegisterFormData = {
+  fullName: string;
+  email: string;
+  phone: string;
+  password: string;
+  confirmPassword: string;
+};
 
 const LoginModal = () => {
+  const { t } = useTranslation();
   const { isLoginOpen, setLoginOpen, login } = useCart();
   const [activeTab, setActiveTab] = useState<"login" | "register">("login");
 
   const loginForm = useForm<LoginFormData>({
-    resolver: zodResolver(loginSchema),
+    resolver: zodResolver(createLoginSchema(t)),
   });
 
   const registerForm = useForm<RegisterFormData>({
-    resolver: zodResolver(registerSchema),
+    resolver: zodResolver(createRegisterSchema(t)),
   });
 
   const onLogin = (data: LoginFormData) => {
@@ -61,11 +74,11 @@ const LoginModal = () => {
         phone: user.phone,
         createdAt: new Date(user.createdAt),
       });
-      toast.success(`Chào mừng ${user.fullName}!`);
+      toast.success(t('auth.welcome', { name: user.fullName }));
       setLoginOpen(false);
       loginForm.reset();
     } else {
-      toast.error('Email hoặc mật khẩu không đúng!');
+      toast.error(t('common.error'));
     }
   };
 
@@ -82,7 +95,7 @@ const LoginModal = () => {
     
     // Check email exists
     if (savedUsers.some((u) => u.email === data.email)) {
-      toast.error('Email đã được sử dụng!');
+      toast.error(t('common.error'));
       return;
     }
     
@@ -107,7 +120,7 @@ const LoginModal = () => {
       createdAt: new Date(newUser.createdAt),
     });
     
-    toast.success('Đăng ký thành công!');
+    toast.success(t('common.success'));
     setLoginOpen(false);
     registerForm.reset();
   };
@@ -116,20 +129,20 @@ const LoginModal = () => {
     <Dialog open={isLoginOpen} onOpenChange={setLoginOpen}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Đăng nhập / Đăng ký</DialogTitle>
+          <DialogTitle>{t('auth.login')} / {t('auth.register')}</DialogTitle>
         </DialogHeader>
 
         <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as "login" | "register")}>
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="login">Đăng nhập</TabsTrigger>
-            <TabsTrigger value="register">Đăng ký</TabsTrigger>
+            <TabsTrigger value="login">{t('auth.login')}</TabsTrigger>
+            <TabsTrigger value="register">{t('auth.register')}</TabsTrigger>
           </TabsList>
 
           {/* Login Tab */}
           <TabsContent value="login">
             <form onSubmit={loginForm.handleSubmit(onLogin)} className="space-y-4">
               <div>
-                <Label htmlFor="login-email">Email</Label>
+                <Label htmlFor="login-email">{t('auth.email')}</Label>
                 <Input
                   id="login-email"
                   type="email"
@@ -144,7 +157,7 @@ const LoginModal = () => {
               </div>
 
               <div>
-                <Label htmlFor="login-password">Mật khẩu</Label>
+                <Label htmlFor="login-password">{t('auth.password')}</Label>
                 <Input
                   id="login-password"
                   type="password"
@@ -159,7 +172,7 @@ const LoginModal = () => {
               </div>
 
               <Button type="submit" className="w-full">
-                Đăng nhập
+                {t('auth.loginButton')}
               </Button>
 
               <p className="text-sm text-center text-muted-foreground">
@@ -179,7 +192,7 @@ const LoginModal = () => {
           <TabsContent value="register">
             <form onSubmit={registerForm.handleSubmit(onRegister)} className="space-y-4">
               <div>
-                <Label htmlFor="register-fullName">Họ và tên</Label>
+                <Label htmlFor="register-fullName">{t('auth.fullName')}</Label>
                 <Input
                   id="register-fullName"
                   {...registerForm.register("fullName")}
@@ -193,7 +206,7 @@ const LoginModal = () => {
               </div>
 
               <div>
-                <Label htmlFor="register-email">Email</Label>
+                <Label htmlFor="register-email">{t('auth.email')}</Label>
                 <Input
                   id="register-email"
                   type="email"
@@ -208,7 +221,7 @@ const LoginModal = () => {
               </div>
 
               <div>
-                <Label htmlFor="register-phone">Số điện thoại</Label>
+                <Label htmlFor="register-phone">{t('auth.phone')}</Label>
                 <Input
                   id="register-phone"
                   {...registerForm.register("phone")}
@@ -222,7 +235,7 @@ const LoginModal = () => {
               </div>
 
               <div>
-                <Label htmlFor="register-password">Mật khẩu</Label>
+                <Label htmlFor="register-password">{t('auth.password')}</Label>
                 <Input
                   id="register-password"
                   type="password"
@@ -237,7 +250,7 @@ const LoginModal = () => {
               </div>
 
               <div>
-                <Label htmlFor="register-confirmPassword">Xác nhận mật khẩu</Label>
+                <Label htmlFor="register-confirmPassword">{t('auth.confirmPassword')}</Label>
                 <Input
                   id="register-confirmPassword"
                   type="password"
@@ -252,7 +265,7 @@ const LoginModal = () => {
               </div>
 
               <Button type="submit" className="w-full">
-                Đăng ký
+                {t('auth.registerButton')}
               </Button>
 
               <p className="text-sm text-center text-muted-foreground">

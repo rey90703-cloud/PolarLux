@@ -4,6 +4,7 @@ import { useCart } from "@/contexts/CartContext";
 import { Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import CheckoutForm from "@/components/CheckoutForm";
+import { useTranslation } from "react-i18next";
 
 // Helper function to get correct image path for GitHub Pages
 const getImagePath = (imagePath: string) => {
@@ -12,6 +13,7 @@ const getImagePath = (imagePath: string) => {
 };
 
 const Cart = () => {
+  const { t } = useTranslation();
   const { items, isCartOpen, setCartOpen, removeFromCart, updateQuantity, getTotalPrice } = useCart();
   const [showCheckout, setShowCheckout] = useState(false);
 
@@ -38,7 +40,7 @@ const Cart = () => {
         <SheetHeader>
           <SheetTitle className="flex items-center gap-2">
             <ShoppingCart className="w-5 h-5" />
-            Giỏ hàng ({items.length} sản phẩm)
+            {t('cart.title')} ({t('cart.items', { count: items.length })})
           </SheetTitle>
         </SheetHeader>
 
@@ -46,13 +48,13 @@ const Cart = () => {
           <div className="flex flex-col items-center justify-center py-12 text-center">
             <ShoppingCart className="w-16 h-16 text-muted-foreground mb-4" />
             <p className="text-lg font-medium text-muted-foreground mb-2">
-              Giỏ hàng trống
+              {t('cart.empty')}
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Thêm sản phẩm vào giỏ hàng để tiếp tục mua sắm
+              {t('cart.emptyDescription')}
             </p>
             <Button onClick={() => setCartOpen(false)}>
-              Tiếp tục mua sắm
+              {t('cart.continueShopping')}
             </Button>
           </div>
         ) : (
@@ -114,15 +116,15 @@ const Cart = () => {
             <div className="border-t pt-4 space-y-4">
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span>Tạm tính:</span>
+                  <span>{t('cart.subtotal')}:</span>
                   <span>{formatPrice(getTotalPrice())}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span>Phí vận chuyển:</span>
-                  <span className="text-green-600">Miễn phí</span>
+                  <span>{t('cart.shipping')}:</span>
+                  <span className="text-green-600">{t('cart.freeShipping')}</span>
                 </div>
                 <div className="flex justify-between text-lg font-bold pt-2 border-t">
-                  <span>Tổng cộng:</span>
+                  <span>{t('cart.total')}:</span>
                   <span className="text-primary">{formatPrice(getTotalPrice())}</span>
                 </div>
               </div>
@@ -132,14 +134,14 @@ const Cart = () => {
                 size="lg"
                 onClick={handleCheckout}
               >
-                Đặt hàng
+                {t('cart.checkout')}
               </Button>
               <Button
                 variant="outline"
                 className="w-full"
                 onClick={() => setCartOpen(false)}
               >
-                Tiếp tục mua sắm
+                {t('cart.continueShopping')}
               </Button>
             </div>
           </div>

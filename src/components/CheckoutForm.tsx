@@ -11,15 +11,17 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { useCart } from "@/contexts/CartContext";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
-const checkoutSchema = z.object({
-  fullName: z.string().min(2, "Họ tên phải có ít nhất 2 ký tự"),
-  phone: z.string().regex(/^0[0-9]{9}$/, "Số điện thoại không hợp lệ"),
-  email: z.string().email("Email không hợp lệ"),
-  address: z.string().min(10, "Địa chỉ phải có ít nhất 10 ký tự"),
-  city: z.string().min(2, "Vui lòng chọn Tỉnh/Thành phố"),
-  district: z.string().min(2, "Vui lòng chọn Quận/Huyện"),
-  ward: z.string().min(2, "Vui lòng chọn Phường/Xã"),
+// Schema will be created inside component to access t()
+const createCheckoutSchema = (t: any) => z.object({
+  fullName: z.string().min(2, t('checkout.validation.nameMin')),
+  phone: z.string().regex(/^0[0-9]{9}$/, t('checkout.validation.phoneInvalid')),
+  email: z.string().email(t('checkout.validation.emailInvalid')),
+  address: z.string().min(10, t('checkout.validation.addressRequired')),
+  city: z.string().min(2, t('checkout.validation.cityRequired')),
+  district: z.string().min(2, t('checkout.validation.districtRequired')),
+  ward: z.string().min(2, t('checkout.validation.wardRequired')),
   paymentMethod: z.enum(["cod", "bank_transfer", "credit_card"]),
   notes: z.string().optional(),
 });
@@ -32,6 +34,7 @@ interface CheckoutFormProps {
 }
 
 const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
+  const { t } = useTranslation();
   const { items, getTotalPrice, clearCart, setCartOpen, user } = useCart();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [orderId, setOrderId] = useState("");
@@ -42,7 +45,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
     formState: { errors },
     watch,
   } = useForm<CheckoutFormData>({
-    resolver: zodResolver(checkoutSchema),
+    resolver: zodResolver(createCheckoutSchema(t)),
     defaultValues: {
       fullName: user?.fullName || "",
       email: user?.email || "",
@@ -81,8 +84,8 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
     clearCart();
     setIsSubmitted(true);
     
-    toast.success('Đặt hàng thành công!', {
-      description: `Mã đơn hàng: ${newOrderId}`,
+    toast.success(t('checkout.success'), {
+      description: `${t('checkout.orderSummary')}: ${newOrderId}`,
     });
   };
 
@@ -94,15 +97,15 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
         {isSubmitted ? (
           <div className="flex flex-col items-center justify-center py-12 text-center px-4">
             <CheckCircle className="w-20 h-20 text-green-600 mb-6" />
-            <h3 className="text-2xl font-bold mb-2">Đặt hàng thành công!</h3>
+            <h3 className="text-2xl font-bold mb-2">{t('checkout.success')}</h3>
             <p className="text-muted-foreground mb-2">
               Cảm ơn bạn đã đặt hàng tại <span style={{ color: '#3b93bd' }}>Polar</span><span style={{ color: '#C0C0C0' }}>Lux</span>
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Mã đơn hàng: <span className="font-mono font-bold">{orderId}</span>
+              {t('checkout.orderSummary')}: <span className="font-mono font-bold">{orderId}</span>
             </p>
             <p className="text-sm text-muted-foreground mb-8 max-w-md">
-              Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để xác nhận đơn hàng.
+              {t('checkout.success')}
             </p>
             <Button
               size="lg"
@@ -111,22 +114,22 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
                 onClose();
               }}
             >
-              Tiếp tục mua sắm
+              {t('cart.continueShopping')}
             </Button>
           </div>
         ) : (
           <>
             <DialogHeader>
-              <DialogTitle className="text-2xl">Thông tin đặt hàng</DialogTitle>
+              <DialogTitle className="text-2xl">{t('checkout.title')}</DialogTitle>
             </DialogHeader>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Thông tin khách hàng */}
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg">Thông tin khách hàng</h3>
+          <h3 className="font-semibold text-lg">{t('checkout.customerInfo')}</h3>
           
           <div>
-            <Label htmlFor="fullName">Họ và tên *</Label>
+            <Label htmlFor="fullName">{t('checkout.fullName')} *</Label>
             <Input
               id="fullName"
               {...register("fullName")}
@@ -139,7 +142,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <Label htmlFor="phone">Số điện thoại *</Label>
+              <Label htmlFor="phone">{t('checkout.phone')} *</Label>
               <Input
                 id="phone"
                 {...register("phone")}
@@ -151,7 +154,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
             </div>
 
             <div>
-              <Label htmlFor="email">Email *</Label>
+              <Label htmlFor="email">{t('checkout.email')} *</Label>
               <Input
                 id="email"
                 type="email"
@@ -167,10 +170,10 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
         {/* Địa chỉ giao hàng */}
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg">Địa chỉ giao hàng</h3>
+          <h3 className="font-semibold text-lg">{t('checkout.address')}</h3>
           
           <div>
-            <Label htmlFor="address">Địa chỉ cụ thể *</Label>
+            <Label htmlFor="address">{t('checkout.address')} *</Label>
             <Input
               id="address"
               {...register("address")}
@@ -183,7 +186,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <Label htmlFor="city">Tỉnh/Thành phố *</Label>
+              <Label htmlFor="city">{t('checkout.city')} *</Label>
               <Input
                 id="city"
                 {...register("city")}
@@ -195,7 +198,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
             </div>
 
             <div>
-              <Label htmlFor="district">Quận/Huyện *</Label>
+              <Label htmlFor="district">{t('checkout.district')} *</Label>
               <Input
                 id="district"
                 {...register("district")}
@@ -207,7 +210,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
             </div>
 
             <div>
-              <Label htmlFor="ward">Phường/Xã *</Label>
+              <Label htmlFor="ward">{t('checkout.ward')} *</Label>
               <Input
                 id="ward"
                 {...register("ward")}
@@ -222,15 +225,15 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
         {/* Phương thức thanh toán */}
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg">Phương thức thanh toán</h3>
+          <h3 className="font-semibold text-lg">{t('checkout.paymentMethod')}</h3>
           <RadioGroup defaultValue="cod" {...register("paymentMethod")}>
             <div className="flex items-center space-x-2 p-4 border rounded-lg">
               <RadioGroupItem value="cod" id="cod" />
               <Label htmlFor="cod" className="cursor-pointer flex-1">
                 <div>
-                  <p className="font-medium">Thanh toán khi nhận hàng (COD)</p>
+                  <p className="font-medium">{t('checkout.cod')}</p>
                   <p className="text-sm text-muted-foreground">
-                    Thanh toán bằng tiền mặt khi nhận hàng
+                    {t('checkout.cod')}
                   </p>
                 </div>
               </Label>
@@ -240,9 +243,9 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
               <RadioGroupItem value="bank_transfer" id="bank_transfer" />
               <Label htmlFor="bank_transfer" className="cursor-pointer flex-1">
                 <div>
-                  <p className="font-medium">Chuyển khoản ngân hàng</p>
+                  <p className="font-medium">{t('checkout.bankTransfer')}</p>
                   <p className="text-sm text-muted-foreground">
-                    Chuyển khoản trước khi nhận hàng
+                    {t('checkout.bankTransfer')}
                   </p>
                 </div>
               </Label>
@@ -252,7 +255,7 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
               <RadioGroupItem value="credit_card" id="credit_card" />
               <Label htmlFor="credit_card" className="cursor-pointer flex-1">
                 <div>
-                  <p className="font-medium">Thẻ tín dụng/Ghi nợ</p>
+                  <p className="font-medium">{t('checkout.creditCard')}</p>
                   <p className="text-sm text-muted-foreground">
                     Visa, Mastercard, JCB
                   </p>
@@ -264,18 +267,18 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
         {/* Ghi chú */}
         <div>
-          <Label htmlFor="notes">Ghi chú đơn hàng (tùy chọn)</Label>
+          <Label htmlFor="notes">{t('checkout.notes')}</Label>
           <Textarea
             id="notes"
             {...register("notes")}
-            placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."
+            placeholder={t('checkout.notesPlaceholder')}
             rows={3}
           />
         </div>
 
         {/* Order Summary */}
         <div className="bg-muted p-4 rounded-lg space-y-2">
-          <h3 className="font-semibold mb-3">Đơn hàng ({items.length} sản phẩm)</h3>
+          <h3 className="font-semibold mb-3">{t('checkout.orderSummary')} ({t('cart.items', { count: items.length })})</h3>
           {items.map((item) => (
             <div key={item.product.id} className="flex justify-between text-sm">
               <span className="text-muted-foreground">
@@ -285,18 +288,18 @@ const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
             </div>
           ))}
           <div className="flex justify-between text-sm pt-2 border-t">
-            <span className="text-muted-foreground">Phí vận chuyển:</span>
-            <span className="text-green-600">Miễn phí</span>
+            <span className="text-muted-foreground">{t('cart.shipping')}:</span>
+            <span className="text-green-600">{t('cart.freeShipping')}</span>
           </div>
           <div className="flex justify-between text-lg font-bold pt-2 border-t">
-            <span>Tổng cộng:</span>
+            <span>{t('cart.total')}:</span>
             <span className="text-primary">{formatPrice(getTotalPrice())}</span>
           </div>
         </div>
 
         {/* Submit Button */}
         <Button type="submit" size="lg" className="w-full">
-          Đặt hàng
+          {t('checkout.placeOrder')}
         </Button>
       </form>
           </>

@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Leaf, Zap, Shield, Sparkles } from "lucide-react";
 import aboutIllustration from "@/assets/about-illustration.jpg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -26,23 +28,23 @@ const About = () => {
   const features = [
     {
       icon: Leaf,
-      title: "Thân thiện môi trường",
-      description: "Giảm thiểu khí thải carbon, bảo vệ hành tinh",
+      title: t('about.feature1Title'),
+      description: t('about.feature1Desc'),
     },
     {
       icon: Zap,
-      title: "Tiết kiệm điện năng",
-      description: "Công nghệ Inverter tiên tiến, tiết kiệm đến 40%",
+      title: t('about.feature2Title'),
+      description: t('about.feature2Desc'),
     },
     {
       icon: Shield,
-      title: "Bảo quản tối ưu",
-      description: "Khử khuẩn, giữ tươi thực phẩm lâu hơn",
+      title: t('about.feature3Title'),
+      description: t('about.feature3Desc'),
     },
     {
       icon: Sparkles,
-      title: "Thiết kế sang trọng",
-      description: "Hiện đại, tinh tế, nâng tầm không gian",
+      title: t('about.feature1Title'),
+      description: t('about.feature1Desc'),
     },
   ];
 
@@ -82,13 +84,11 @@ const About = () => {
           >
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Đổi mới để
-                <span className="text-primary"> Bền vững</span>
+                {t('about.title')}
+                <span className="text-primary"> {t('about.titleHighlight')}</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Chúng tôi cam kết mang đến những giải pháp làm lạnh thông minh,
-                kết hợp công nghệ tiên tiến với thiết kế bền vững. Mỗi sản phẩm
-                được chế tạo với sứ mệnh tiết kiệm năng lượng và bảo vệ môi trường.
+                {t('about.description')}
               </p>
             </div>
 
