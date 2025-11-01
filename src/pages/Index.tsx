@@ -5,6 +5,7 @@ import Collection from "@/components/Collection";
 import Technology from "@/components/Technology";
 import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
+import History from "@/components/History";
 import Footer from "@/components/Footer";
 import Cart from "@/components/Cart";
 import LoginModal from "@/components/LoginModal";
@@ -20,6 +21,7 @@ const Index = () => {
       <Technology />
       <Gallery />
       <FAQ />
+      <History />
       <Footer />
       <Cart />
       <LoginModal />

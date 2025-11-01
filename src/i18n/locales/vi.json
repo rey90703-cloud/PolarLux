@@ -239,5 +239,414 @@
     "filter": "Lọc",
     "sort": "Sắp xếp",
     "all": "Tất cả"
+  },
+  "history": {
+    "title": "Lịch sử Samsung",
+    "periods": [
+      {
+        "id": "2018-present",
+        "period": "2018 đến nay",
+        "title": "Chấp nhận những thách thức mới để duy trì di sản của chúng tôi",
+        "description": "Sau khi công bố doanh số kỷ lục và lợi nhuận hoạt động vào năm trước đó, Samsung Electronics đặt mục tiêu vào một thách thức mới khi tổ chức lễ kỷ niệm lần thứ 50 vào năm 2019. Kể từ đó, Samsung đã liên tục phấn đấu để trở thành Số 1 trong ngành công nghiệp bán dẫn hệ thống đồng thời thúc đẩy tăng trưởng trong các lĩnh vực như AI và 5G.",
+        "timeline": [
+          {
+            "year": "2024",
+            "events": [
+              "Giữ vị trí dẫn đầu trên thị trường sản xuất TV toàn cầu năm thứ 18 liên tiếp",
+              "Phát triển LPDDR5X DRAM nhanh nhất trong ngành ở tốc độ 10.7Gbps",
+              "Bắt đầu sản xuất hàng loạt V-NAND thế hệ thứ 9 đầu tiên trong ngành",
+              "Đóng vai trò quan trọng trong Lễ khai mạc Paris 2024"
+            ]
+          },
+          {
+            "year": "2023",
+            "events": [
+              "Xếp hạng Top 5 Thương hiệu Toàn cầu năm thứ 4 liên tiếp",
+              "Đứng đầu thị trường TV toàn cầu năm thứ 17 liên tiếp",
+              "Bắt đầu sản xuất hàng loạt 12nm-class DRAM tiên tiến nhất trong ngành",
+              "Công bố mô hình AI tạo sinh Samsung Gauss"
+            ]
+          },
+          {
+            "year": "2022",
+            "events": [
+              "Tổ chức Diễn đàn Samsung 6G đầu tiên",
+              "Bắt đầu sản xuất node xử lý 3nm đầu tiên trên thế giới",
+              "Ra mắt dịch vụ Samsung Gaming Hub",
+              "Công bố chiến lược môi trường mới"
+            ]
+          },
+          {
+            "year": "2021",
+            "events": [
+              "Ra mắt Neo QLED TVs",
+              "Ra mắt robot hút bụi hỗ trợ bởi AI",
+              "Giới thiệu bộ vi xử lý 5nm đầu tiên trong ngành",
+              "Công bố tầm nhìn phát triển bền vững: Galaxy dành cho Hành tinh"
+            ]
+          },
+          {
+            "year": "2020",
+            "events": [
+              "Ra mắt Samsung MICRO LED 110\"",
+              "Giới thiệu Galaxy Z Flip và Galaxy Z Fold2",
+              "Xuất bản Báo cáo 6G",
+              "Xếp hạng Top 5 Thương hiệu Toàn cầu ($62.3 tỷ)"
+            ]
+          },
+          {
+            "year": "2019",
+            "events": [
+              "Công bố tầm nhìn CSR mới: Together for Tomorrow!",
+              "Ra mắt Galaxy Fold, tạo ra thế hệ di động hoàn toàn mới",
+              "Ra mắt điện thoại thông minh 5G đầu tiên",
+              "Giới thiệu tủ lạnh BESPOKE"
+            ]
+          },
+          {
+            "year": "2018",
+            "events": [
+              "Bắt đầu sản xuất 8GB HBM2 Aquabolt",
+              "Ra mắt QLED 8K và TV The Wall",
+              "Thành lập bảy Trung tâm AI Toàn cầu",
+              "Cung cấp thiết bị thương mại mạng 5G đầu tiên"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2008-2017",
+        "period": "2017-2008",
+        "title": "Trở thành công ty điện tử lớn nhất thế giới",
+        "description": "Sau cuộc khủng hoảng tài chính toàn cầu, Samsung Electronics dựa vào văn hóa sáng tạo và tự chủ để phát triển mạnh. Năm 2010, Samsung trở thành công ty điện tử lớn nhất thế giới về doanh số.",
+        "timeline": [
+          {
+            "year": "2017",
+            "events": [
+              "Thành lập đơn vị kinh doanh sản xuất tách biệt",
+              "Mở rộng tính năng giọng nói Bixby đến hơn 200 quốc gia",
+              "Ra mắt QLED TV và The Frame",
+              "Bắt đầu sản xuất hàng loạt V-NAND thế hệ 4"
+            ]
+          },
+          {
+            "year": "2016",
+            "events": [
+              "Ra mắt TV phong cách sống đầu tiên The Serif",
+              "Ra mắt Tủ lạnh Samsung Family Hub™",
+              "Mua lại Dacor và Viv Labs",
+              "Bắt đầu sản xuất hàng loạt 8Gb DDR4"
+            ]
+          },
+          {
+            "year": "2015",
+            "events": [
+              "Ra mắt SUHD TV với công nghệ Màu sắc Quantum",
+              "Công bố sản xuất hàng loạt Exynos 7 Octa",
+              "Ra mắt dịch vụ thanh toán Samsung Pay",
+              "Bắt đầu sản xuất bộ nhớ flash 256Gb V-NAND"
+            ]
+          },
+          {
+            "year": "2014",
+            "events": [
+              "Ra mắt Bộ sưu tập Chef",
+              "Bắt đầu sản xuất DRAM với công nghệ 20nm",
+              "Ra mắt UHD TV cong 105\"",
+              "Ra mắt Galaxy Note Edge"
+            ]
+          },
+          {
+            "year": "2013",
+            "events": [
+              "Thành lập nhà máy sản xuất di động tại Bắc Ninh, Việt Nam",
+              "Công bố công nghệ di động 5G mm-Wave đầu tiên",
+              "Bắt đầu sản xuất bộ nhớ flash 3D V-NAND"
+            ]
+          },
+          {
+            "year": "2012",
+            "events": [
+              "Sáp nhập Samsung LED Co., Ltd.",
+              "Thương mại hóa LTE tiên tiến đầu tiên",
+              "Xếp thứ 1 thị trường điện thoại di động toàn cầu",
+              "Xếp thứ 9 trong danh sách 100 thương hiệu toàn cầu"
+            ]
+          },
+          {
+            "year": "2011",
+            "events": [
+              "Phát triển DDR4 DRAM",
+              "Ra mắt thương hiệu AP di động Exynos",
+              "Ra mắt máy tính bảng Galaxy Tab 10.1",
+              "Ra mắt Galaxy Note"
+            ]
+          },
+          {
+            "year": "2010",
+            "events": [
+              "Phát triển 30nm-class 2Gb DDR3 DRAM",
+              "Mở Samsung Apps cho TVs",
+              "Ra mắt dòng điện thoại thông minh Galaxy",
+              "Trở thành công ty điện tử lớn nhất thế giới"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1998-2007",
+        "period": "2007-1998",
+        "title": "Dẫn đầu quá trình chuyển đổi sang Thời đại kỹ thuật số",
+        "description": "Samsung Electronics thành công vượt qua khủng hoảng tài chính châu Á và trở thành một trong ba công ty điện tử hàng đầu thế giới với doanh thu 100 tỷ đô la vào năm 2007.",
+        "timeline": [
+          {
+            "year": "2007",
+            "events": [
+              "Trở thành nhà tài trợ của WorldSkills Competition",
+              "Ra mắt 70-inch Full HD LCD TV",
+              "Tổ chức Đội ngũ Kinh doanh Thiết bị Sức khỏe & Y tế",
+              "Phát triển bộ nhớ flash 30nm 64Gb NAND"
+            ]
+          },
+          {
+            "year": "2006",
+            "events": [
+              "Ra mắt đầu phát Blu-ray",
+              "Phát triển công nghệ NAND flash",
+              "Trở thành nhà tài trợ Paralympic Games",
+              "Đứng số 1 trong thị phần TV toàn cầu"
+            ]
+          },
+          {
+            "year": "2005",
+            "events": [
+              "Bắt đầu vận hành S Line tại Giheung",
+              "Trở thành nhà tài trợ Chelsea FC",
+              "Thành lập Studio Thiết kế tại Milano",
+              "Xuất xưởng điện thoại di động vượt 100 triệu chiếc"
+            ]
+          },
+          {
+            "year": "2004",
+            "events": [
+              "Ra mắt LCD TV lớn nhất thế giới (46 inch)",
+              "Thành lập trung tâm LSI R&D tại Trung Quốc",
+              "Thành lập S-LCD cùng Sony",
+              "Lợi nhuận ròng đạt 10 tỷ đô la"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1988-1997",
+        "period": "1997-1988",
+        "title": "Cạnh tranh trên thị trường toàn cầu và tập trung vào kiểm soát chất lượng",
+        "description": "Năm 1988, Samsung Electronics đã khẳng định vị thế trên trường thế giới sau khi sáp nhập với Samsung Semiconductor & Telecommunications. Được dẫn dắt bởi câu thần chú \"Chất lượng là trên hết\", công ty đã sản xuất các sản phẩm cạnh tranh cho một thị trường đòi hỏi khắt khe và trở thành một cái tên quen thuộc trên khắp thế giới với tư cách là đối tác chính thức của Olympic Games.",
+        "timeline": [
+          {
+            "year": "1997",
+            "events": [
+              "Tổ chức Đơn vị Kinh doanh LSI Hệ thống",
+              "Xây dựng nhà máy đa phức hợp ở Seremban, Malaysia",
+              "Trở thành Đối tác Olympic Toàn cầu (TOP) trong danh mục truyền thông không dây"
+            ]
+          },
+          {
+            "year": "1996",
+            "events": [
+              "Xây dựng nhà máy đa phức hợp đầu tiên ở nước ngoài tại Tijuana, Mexico",
+              "Thương mại hóa hệ thống CDMA đầu tiên trên thế giới",
+              "Phát triển 1G DRAM",
+              "Phát triển bộ vi xử lý kiến trúc Alpha 64 bit đầu tiên"
+            ]
+          },
+          {
+            "year": "1995",
+            "events": [
+              "Thành lập Samsung Art and Design Institute (SADI)",
+              "Phát triển công nghệ MPEG-3 theo thời gian thực đầu tiên"
+            ]
+          },
+          {
+            "year": "1994",
+            "events": [
+              "Thành lập Samsung Design America tại San Francisco",
+              "Phát triển 256Mb DRAM đầu tiên trên thế giới",
+              "Tạo ra tổ chức dành riêng cho các dự án công dân doanh nghiệp"
+            ]
+          },
+          {
+            "year": "1993",
+            "events": [
+              "Ra mắt Company Identity (CI) cho Samsung Group",
+              "Xây dựng nhà máy chế tạo tấm wafer 200mm đầu tiên",
+              "Công bố Sáng kiến Quản lý Mới",
+              "Ra mắt thiết bị cầm tay có trọng lượng chưa tới 200g"
+            ]
+          },
+          {
+            "year": "1992",
+            "events": [
+              "Phát triển hệ thống điện thoại di động",
+              "Phát triển 64Mb DRAM đầu tiên trên thế giới",
+              "Trở thành số 1 về DRAM trên toàn thế giới"
+            ]
+          },
+          {
+            "year": "1991",
+            "events": [
+              "Xây dựng nhà máy hậu xử lý chất bán dẫn tại Onyang",
+              "Thành lập studio thiết kế tại Nhật Bản"
+            ]
+          },
+          {
+            "year": "1989",
+            "events": [
+              "Xây dựng Trung tâm ULSI R&D ở Giheung",
+              "Thành lập liên doanh Công ty Sản xuất TV tại Trung Quốc"
+            ]
+          },
+          {
+            "year": "1988",
+            "events": [
+              "Phát triển thiết bị cầm tay đầu tiên của Hàn Quốc",
+              "Samsung Semiconductor sáp nhập với Samsung Electronics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1980-1987",
+        "period": "1987-1980",
+        "title": "Trở thành một công ty công nghệ cao",
+        "description": "Vào những năm 1980, Samsung đã thiết lập một bản sắc doanh nghiệp mới tập trung vào việc bảo mật công nghệ của riêng mình, tăng cường R&D, mở rộng hoạt động kinh doanh bán dẫn vào lĩnh vực VLSI tiên tiến. Công ty cũng đã ra mắt công ty con sản xuất toàn cầu đầu tiên tại Bồ Đào Nha.",
+        "timeline": [
+          {
+            "year": "1987",
+            "events": [
+              "Mở Samsung Advanced Institute of Technology (SAIT) để tăng cường R&D"
+            ]
+          },
+          {
+            "year": "1986",
+            "events": [
+              "Thương mại hóa hệ thống chuyển đổi kỹ thuật số TDX-1",
+              "Phát triển TV kỹ thuật số đầu tiên trên thế giới",
+              "Phát triển 1Mb DRAM",
+              "Phát triển máy quay băng video nhỏ nhất, nhẹ nhất thế giới"
+            ]
+          },
+          {
+            "year": "1985",
+            "events": [
+              "Công bố tài trợ cho Asian Games 1986 và Olympic Games 1988",
+              "Phát hành trái phiếu chuyển đổi nước ngoài đầu tiên"
+            ]
+          },
+          {
+            "year": "1984",
+            "events": [
+              "Đổi tên công ty thành Samsung Electronics Co., Ltd.",
+              "Phát triển 256Kb DRAM"
+            ]
+          },
+          {
+            "year": "1983",
+            "events": [
+              "Bắt đầu sản xuất máy tính cá nhân (SPC-1000)",
+              "Khởi công cơ sở sản xuất chất bán dẫn VLSI tại Giheung",
+              "Phát triển 64Kb DRAM"
+            ]
+          },
+          {
+            "year": "1982",
+            "events": [
+              "Thành lập văn phòng kinh doanh đầu tiên ở châu Âu tại Đức",
+              "Thành lập công ty con sản xuất ở nước ngoài đầu tiên tại Bồ Đào Nha",
+              "Tổ chức lại công ty: Samsung Semiconductor & Telecommunications"
+            ]
+          },
+          {
+            "year": "1980",
+            "events": [
+              "Samsung Semiconductor sáp nhập với Samsung Electronics",
+              "Thành lập Corporate Identity Program (CIP) đầu tiên",
+              "Mua lại Korea Telecommunications Co., Ltd.",
+              "Mở Trung tâm R&D đầu tiên ở Suwon"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1969-1979",
+        "period": "1979-1969",
+        "title": "Thành lập và phát triển thành nhà cung cấp điện tử tiêu dùng toàn diện",
+        "description": "Ngay sau khi thành lập vào năm 1969, Samsung Electronics nhanh chóng trở thành một trong những nhà sản xuất hàng đầu của Hàn Quốc. Sự tăng trưởng ban đầu là do ngành công nghiệp hàng điện tử tiêu dùng trong nước mới bắt đầu cất cánh và công ty bắt đầu xuất khẩu sản phẩm.",
+        "timeline": [
+          {
+            "year": "1979",
+            "events": [
+              "Phát triển VCRs dựa trên VHS (sản phẩm: SC-7700)"
+            ]
+          },
+          {
+            "year": "1978",
+            "events": [
+              "Korea Semiconductor được đổi tên thành Samsung Semiconductor",
+              "Thành lập văn phòng nước ngoài đầu tiên tại Hoa Kỳ",
+              "Sản xuất 4 triệu chiếc TVs đen trắng",
+              "Phát triển lò vi sóng đầu tiên"
+            ]
+          },
+          {
+            "year": "1977",
+            "events": [
+              "Samsung Electric sáp nhập với Samsung Electronics",
+              "Bắt đầu sản xuất và xuất khẩu TVs màu ra toàn cầu",
+              "Hoàn tất việc mua lại Korea Semiconductor"
+            ]
+          },
+          {
+            "year": "1976",
+            "events": [
+              "Sản xuất 1 triệu TVs đen trắng"
+            ]
+          },
+          {
+            "year": "1975",
+            "events": [
+              "Ra mắt TV hệ thống Khởi động Nhanh thứ ba trên thế giới"
+            ]
+          },
+          {
+            "year": "1974",
+            "events": [
+              "Samsung-Sanyo Electric được đổi tên thành Samsung Electric",
+              "Mua lại 50% cổ phần của Korea Semiconductor",
+              "Bắt đầu sản xuất máy giặt, tủ lạnh và máy điều hòa"
+            ]
+          },
+          {
+            "year": "1971",
+            "events": [
+              "Bắt đầu xuất khẩu TVs đen trắng ra thị trường toàn cầu"
+            ]
+          },
+          {
+            "year": "1970",
+            "events": [
+              "Bắt đầu sản xuất TV đen trắng (sản phẩm: P-3202)"
+            ]
+          },
+          {
+            "year": "1969",
+            "events": [
+              "Thành lập Samsung Electronics Co., Ltd.",
+              "Thành lập Samsung-Sanyo Electric, công ty liên doanh với Sanyo"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

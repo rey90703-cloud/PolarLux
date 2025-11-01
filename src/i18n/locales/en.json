@@ -239,5 +239,414 @@
     "filter": "Filter",
     "sort": "Sort",
     "all": "All"
+  },
+  "history": {
+    "title": "Samsung History",
+    "periods": [
+      {
+        "id": "2018-present",
+        "period": "2018 to Present",
+        "title": "Taking on new challenges to maintain our legacy",
+        "description": "After announcing record sales and operating profit the previous year, Samsung Electronics set its sights on a new challenge as it celebrated its 50th anniversary in 2019. Since then, Samsung has continuously strived to become Number 1 in the system semiconductor industry while driving growth in areas such as AI and 5G.",
+        "timeline": [
+          {
+            "year": "2024",
+            "events": [
+              "Held leading position in global TV manufacturing market for 18th consecutive year",
+              "Developed industry's fastest LPDDR5X DRAM at 10.7Gbps speed",
+              "Started mass production of industry's first 9th generation V-NAND",
+              "Played key role in Paris 2024 Opening Ceremony"
+            ]
+          },
+          {
+            "year": "2023",
+            "events": [
+              "Ranked Top 5 Global Brands for 4th consecutive year",
+              "Led global TV market for 17th consecutive year",
+              "Started mass production of industry's most advanced 12nm-class DRAM",
+              "Announced Samsung Gauss generative AI model"
+            ]
+          },
+          {
+            "year": "2022",
+            "events": [
+              "Held first Samsung 6G Forum",
+              "Started production of world's first 3nm processing node",
+              "Launched Samsung Gaming Hub service",
+              "Announced new environmental strategy"
+            ]
+          },
+          {
+            "year": "2021",
+            "events": [
+              "Launched Neo QLED TVs",
+              "Launched AI-powered robot vacuum cleaner",
+              "Introduced industry's first 5nm processor",
+              "Announced sustainability vision: Galaxy for the Planet"
+            ]
+          },
+          {
+            "year": "2020",
+            "events": [
+              "Launched Samsung MICRO LED 110\"",
+              "Introduced Galaxy Z Flip and Galaxy Z Fold2",
+              "Published 6G Report",
+              "Ranked Top 5 Global Brands ($62.3 billion)"
+            ]
+          },
+          {
+            "year": "2019",
+            "events": [
+              "Announced new CSR vision: Together for Tomorrow!",
+              "Launched Galaxy Fold, creating entirely new mobile generation",
+              "Launched first 5G smartphone",
+              "Introduced BESPOKE refrigerator"
+            ]
+          },
+          {
+            "year": "2018",
+            "events": [
+              "Started production of 8GB HBM2 Aquabolt",
+              "Launched QLED 8K and The Wall TV",
+              "Established seven Global AI Centers",
+              "Provided world's first 5G commercial equipment"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2008-2017",
+        "period": "2017-2008",
+        "title": "Becoming the world's largest electronics company",
+        "description": "After the global financial crisis, Samsung Electronics relied on creative and autonomous culture to thrive. In 2010, Samsung became the world's largest electronics company by revenue.",
+        "timeline": [
+          {
+            "year": "2017",
+            "events": [
+              "Established separate manufacturing business unit",
+              "Expanded Bixby voice features to over 200 countries",
+              "Launched QLED TV and The Frame",
+              "Started mass production of 4th generation V-NAND"
+            ]
+          },
+          {
+            "year": "2016",
+            "events": [
+              "Launched first lifestyle TV The Serif",
+              "Launched Samsung Family Hub™ Refrigerator",
+              "Acquired Dacor and Viv Labs",
+              "Started mass production of 8Gb DDR4"
+            ]
+          },
+          {
+            "year": "2015",
+            "events": [
+              "Launched SUHD TV with Quantum Color technology",
+              "Announced mass production of Exynos 7 Octa",
+              "Launched Samsung Pay payment service",
+              "Started production of 256Gb V-NAND flash memory"
+            ]
+          },
+          {
+            "year": "2014",
+            "events": [
+              "Launched Chef Collection",
+              "Started DRAM production with 20nm technology",
+              "Launched 105\" curved UHD TV",
+              "Launched Galaxy Note Edge"
+            ]
+          },
+          {
+            "year": "2013",
+            "events": [
+              "Established mobile manufacturing plant in Bac Ninh, Vietnam",
+              "Announced world's first 5G mm-Wave mobile technology",
+              "Started production of 3D V-NAND flash memory"
+            ]
+          },
+          {
+            "year": "2012",
+            "events": [
+              "Merged with Samsung LED Co., Ltd.",
+              "First to commercialize advanced LTE",
+              "Ranked #1 in global mobile phone market",
+              "Ranked #9 in top 100 global brands"
+            ]
+          },
+          {
+            "year": "2011",
+            "events": [
+              "Developed DDR4 DRAM",
+              "Launched Exynos mobile AP brand",
+              "Launched Galaxy Tab 10.1 tablet",
+              "Launched Galaxy Note"
+            ]
+          },
+          {
+            "year": "2010",
+            "events": [
+              "Developed 30nm-class 2Gb DDR3 DRAM",
+              "Opened Samsung Apps for TVs",
+              "Launched Galaxy smartphone line",
+              "Became world's largest electronics company"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1998-2007",
+        "period": "2007-1998",
+        "title": "Leading the digital age transformation",
+        "description": "Samsung Electronics successfully overcame the Asian financial crisis and became one of the world's top three electronics companies with $100 billion revenue in 2007.",
+        "timeline": [
+          {
+            "year": "2007",
+            "events": [
+              "Became sponsor of WorldSkills Competition",
+              "Launched 70-inch Full HD LCD TV",
+              "Organized Health & Medical Equipment Business Team",
+              "Developed 30nm 64Gb NAND flash memory"
+            ]
+          },
+          {
+            "year": "2006",
+            "events": [
+              "Launched Blu-ray player",
+              "Developed NAND flash technology",
+              "Became Paralympic Games sponsor",
+              "Ranked #1 in global TV market share"
+            ]
+          },
+          {
+            "year": "2005",
+            "events": [
+              "Started S Line operation in Giheung",
+              "Became Chelsea FC sponsor",
+              "Established Design Studio in Milano",
+              "Shipped over 100 million mobile phones"
+            ]
+          },
+          {
+            "year": "2004",
+            "events": [
+              "Launched world's largest LCD TV (46 inch)",
+              "Established LSI R&D center in China",
+              "Formed S-LCD with Sony",
+              "Net profit reached $10 billion"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1988-1997",
+        "period": "1997-1988",
+        "title": "Competing globally and focusing on quality control",
+        "description": "In 1988, Samsung Electronics asserted its position on the world stage after merging with Samsung Semiconductor & Telecommunications. Led by the mantra \"Quality First\", the company produced competitive products for a demanding market and became a household name worldwide as an official partner of the Olympic Games.",
+        "timeline": [
+          {
+            "year": "1997",
+            "events": [
+              "Organized System LSI Business Unit",
+              "Built multi-complex factory in Seremban, Malaysia",
+              "Became TOP (The Olympic Partner) in wireless communications category"
+            ]
+          },
+          {
+            "year": "1996",
+            "events": [
+              "Built first overseas integrated production facility in Tijuana, Mexico",
+              "Commercialized world's first digital CDMA mobile system",
+              "Developed 1G DRAM",
+              "Developed world's first 64-bit Alpha architecture processor"
+            ]
+          },
+          {
+            "year": "1995",
+            "events": [
+              "Established Samsung Art and Design Institute (SADI)",
+              "Developed world's first real-time MPEG-3 technology"
+            ]
+          },
+          {
+            "year": "1994",
+            "events": [
+              "Established Samsung Design America in San Francisco",
+              "Developed world's first 256Mb DRAM",
+              "Created dedicated corporate citizenship organization"
+            ]
+          },
+          {
+            "year": "1993",
+            "events": [
+              "Launched Company Identity (CI) for Samsung Group",
+              "Built world's first 200mm wafer fabrication plant",
+              "Announced New Management Initiative",
+              "Launched handheld device weighing under 200g"
+            ]
+          },
+          {
+            "year": "1992",
+            "events": [
+              "Developed mobile phone system",
+              "Developed world's first 64Mb DRAM",
+              "Became #1 in DRAM globally"
+            ]
+          },
+          {
+            "year": "1991",
+            "events": [
+              "Built semiconductor post-processing plant in Onyang",
+              "Established design studio in Japan"
+            ]
+          },
+          {
+            "year": "1989",
+            "events": [
+              "Built ULSI R&D Center in Giheung",
+              "Formed TV manufacturing joint venture in China"
+            ]
+          },
+          {
+            "year": "1988",
+            "events": [
+              "Developed Korea's first handheld device",
+              "Samsung Semiconductor merged with Samsung Electronics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1980-1987",
+        "period": "1987-1980",
+        "title": "Becoming a high-tech company",
+        "description": "In the 1980s, Samsung established a new corporate identity focused on securing its own technology, strengthening R&D, expanding semiconductor business into advanced VLSI fields. The company also launched its first global manufacturing subsidiary in Portugal.",
+        "timeline": [
+          {
+            "year": "1987",
+            "events": [
+              "Opened Samsung Advanced Institute of Technology (SAIT) to strengthen R&D"
+            ]
+          },
+          {
+            "year": "1986",
+            "events": [
+              "Commercialized TDX-1 time division digital switching system",
+              "Developed world's first digital TV",
+              "Developed 1Mb DRAM",
+              "Developed world's smallest and lightest 4mm video camera"
+            ]
+          },
+          {
+            "year": "1985",
+            "events": [
+              "Announced sponsorship of 1986 Asian Games and 1988 Seoul Olympics",
+              "Issued first foreign convertible bond"
+            ]
+          },
+          {
+            "year": "1984",
+            "events": [
+              "Renamed company to Samsung Electronics Co., Ltd.",
+              "Developed 256Kb DRAM"
+            ]
+          },
+          {
+            "year": "1983",
+            "events": [
+              "Began personal computer production (SPC-1000)",
+              "Began construction of VLSI semiconductor facility in Giheung",
+              "Developed 64Kb DRAM"
+            ]
+          },
+          {
+            "year": "1982",
+            "events": [
+              "Established first European sales office in Germany",
+              "Established first overseas production subsidiary in Portugal",
+              "Reorganized as Samsung Semiconductor & Telecommunications"
+            ]
+          },
+          {
+            "year": "1980",
+            "events": [
+              "Samsung Semiconductor merged with Samsung Electronics",
+              "Established first Corporate Identity Program (CIP)",
+              "Acquired Korea Telecommunications Co., Ltd.",
+              "Opened first R&D center in Suwon"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1969-1979",
+        "period": "1979-1969",
+        "title": "Founding and development as comprehensive electronics provider",
+        "description": "Shortly after its establishment in 1969, Samsung Electronics quickly became one of Korea's leading manufacturers. Initial growth was driven by the nascent domestic consumer electronics industry taking off and the company beginning to export its products.",
+        "timeline": [
+          {
+            "year": "1979",
+            "events": [
+              "Developed VHS-based VCRs (product: SC-7700)"
+            ]
+          },
+          {
+            "year": "1978",
+            "events": [
+              "Korea Semiconductor renamed to Samsung Semiconductor",
+              "Established first overseas office in the US",
+              "Produced 4 million B&W TVs",
+              "Developed first microwave oven"
+            ]
+          },
+          {
+            "year": "1977",
+            "events": [
+              "Samsung Electric merged with Samsung Electronics",
+              "Began mass production and export of color TVs globally",
+              "Completed acquisition of Korea Semiconductor"
+            ]
+          },
+          {
+            "year": "1976",
+            "events": [
+              "Produced 1 million B&W TVs"
+            ]
+          },
+          {
+            "year": "1975",
+            "events": [
+              "Launched world's third Quick Start TV system"
+            ]
+          },
+          {
+            "year": "1974",
+            "events": [
+              "Samsung-Sanyo Electric renamed to Samsung Electric",
+              "Acquired 50% stake in Korea Semiconductor",
+              "Began production of washing machines, refrigerators and air conditioners"
+            ]
+          },
+          {
+            "year": "1971",
+            "events": [
+              "Began exporting B&W TVs to global markets"
+            ]
+          },
+          {
+            "year": "1970",
+            "events": [
+              "Began B&W TV production (product: P-3202)"
+            ]
+          },
+          {
+            "year": "1969",
+            "events": [
+              "Founded Samsung Electronics Co., Ltd.",
+              "Established Samsung-Sanyo Electric joint venture with Sanyo"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
