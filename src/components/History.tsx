@@ -55,7 +55,7 @@ const History = () => {
   const totalItems = currentPeriod.timeline.length;
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section id="history" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         {/* Title */}
         <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 lg:mb-12">

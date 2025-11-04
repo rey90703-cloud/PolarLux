@@ -29,6 +29,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: t('nav.home'), id: "hero" },
+    { label: t('nav.introduction'), id: "history" },
     { label: t('nav.about'), id: "about" },
     { label: t('nav.collection'), id: "collection" },
     { label: t('nav.gallery'), id: "gallery" },

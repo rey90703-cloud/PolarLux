@@ -18,7 +18,7 @@ const HeaderTop = () => {
 
   return (
     <div className="bg-foreground text-white py-2 text-sm">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 pr-8 sm:pr-4">
         <div className="flex items-center justify-between">
           {/* Left: Contact Info */}
           <div className="flex items-center gap-4">
@@ -29,16 +29,16 @@ const HeaderTop = () => {
           </div>
 
           {/* Right: Language, Login, Cart */}
-          <div className="flex items-center gap-4 lg:gap-6">
+          <div className="flex items-center gap-2 sm:gap-4 lg:gap-6">
             {/* Language Selector */}
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-2 hover:text-primary transition-colors"
+                className="flex items-center gap-1 hover:text-primary transition-colors"
               >
                 <span className="text-xs">{currentLang === 'vi' ? '🇻🇳' : '🇬🇧'}</span>
-                <span className="hidden sm:inline">{currentLang === 'vi' ? 'Tiếng Việt' : 'English'}</span>
-                <ChevronDown className="w-3 h-3" />
+                <span className="hidden lg:inline">{currentLang === 'vi' ? 'Tiếng Việt' : 'English'}</span>
+                <ChevronDown className="w-3 h-3 hidden sm:inline" />
               </button>
               
               {isLangOpen && (
@@ -63,13 +63,13 @@ const HeaderTop = () => {
 
             {/* Login/User */}
             {user ? (
-              <div className="flex items-center gap-3">
-                <span className="hidden sm:inline text-xs">
+              <div className="flex items-center gap-1 sm:gap-3">
+                <span className="hidden lg:inline text-xs">
                   {t('auth.welcome', { name: user.fullName })}
                 </span>
                 <button
                   onClick={logout}
-                  className="flex items-center gap-2 hover:text-primary transition-colors"
+                  className="flex items-center hover:text-primary transition-colors"
                   title={t('nav.logout')}
                 >
                   <LogOut className="w-4 h-4" />
@@ -78,17 +78,17 @@ const HeaderTop = () => {
             ) : (
               <button
                 onClick={() => setLoginOpen(true)}
-                className="flex items-center gap-2 hover:text-primary transition-colors"
+                className="flex items-center hover:text-primary transition-colors"
               >
                 <User className="w-4 h-4" />
-                <span className="hidden sm:inline">{t('nav.login')}</span>
+                <span className="hidden lg:inline ml-1">{t('nav.login')}</span>
               </button>
             )}
 
             {/* Cart */}
             <button
               onClick={() => setCartOpen(true)}
-              className="flex items-center gap-2 hover:text-primary transition-colors relative"
+              className="flex items-center hover:text-primary transition-colors relative"
             >
               <div className="relative">
                 <ShoppingCart className="w-4 h-4" />
@@ -98,7 +98,7 @@ const HeaderTop = () => {
                   </Badge>
                 )}
               </div>
-              <span className="hidden sm:inline">{t('cart.title')}</span>
+              <span className="hidden lg:inline ml-1">{t('cart.title')}</span>
             </button>
           </div>
         </div>
