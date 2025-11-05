@@ -99,6 +99,22 @@
       "q6": {
         "question": "Công nghệ làm lạnh Twin Cooling Plus là gì?",
         "answer": "Twin Cooling Plus sử dụng 2 hệ thống làm lạnh riêng biệt cho ngăn lạnh và ngăn đông, giữ độ ẩm tối ưu 70%, ngăn lẫn mùi, bảo quản thực phẩm tươi lâu gấp đôi."
+      },
+      "q7": {
+        "question": "Chính sách trả góp của PolarLux như thế nào?",
+        "answer": "PolarLux hỗ trợ trả góp 0% lãi suất cho tất cả các dòng tủ lạnh Samsung chính hãng. Áp dụng với thẻ tín dụng của hơn 20 ngân hàng (Vietcombank, Techcombank, VPBank, v.v...). Kỳ hạn linh hoạt: 3 – 6 – 12 tháng. Không phát sinh phí ẩn, không cần thế chấp. Ngoài ra, PolarLux còn có chương trình trả góp qua đối tác tài chính cho khách hàng không có thẻ tín dụng – chỉ cần CCCD và sao kê thu nhập."
+      },
+      "q8": {
+        "question": "Dịch vụ hậu mãi của PolarLux như thế nào?",
+        "answer": "PolarLux cam kết mang đến dịch vụ hậu mãi vượt trội so với thị trường: Bảo hành chính hãng toàn quốc theo tiêu chuẩn của Samsung (24 tháng), tặng thêm 6 tháng bảo hành mở rộng cho khách hàng đăng ký trực tuyến. Đổi mới trong 15 ngày nếu phát hiện lỗi kỹ thuật, 1 đổi 1 trong 30 ngày cho sản phẩm thuộc chương trình \"Chính hãng an tâm\". Hỗ trợ kỹ thuật và tư vấn sử dụng 24/7, miễn phí trọn đời sản phẩm."
+      },
+      "q9": {
+        "question": "Hướng dẫn mua hàng tại PolarLux",
+        "answer": "Bạn có thể đặt mua tủ lạnh Samsung chính hãng từ PolarLux theo 2 cách: (1) Mua hàng trực tuyến tại website mu-fridge.com - Truy cập website, chọn sản phẩm, xem thông tin chi tiết, thêm vào giỏ hàng, điền thông tin giao hàng, chọn phương thức thanh toán (trực tuyến/COD/trả góp 0%), xác nhận đơn hàng. Sau khi xác nhận, PolarLux sẽ liên hệ để xác nhận lịch giao hàng và hỗ trợ lắp đặt miễn phí tận nhà. (2) Đặt hàng qua Hotline 1900.xxx.xxx - Đội ngũ tư vấn viên sẽ giải đáp chi tiết về sản phẩm, giá bán và khuyến mãi hiện hành, hướng dẫn chọn mẫu phù hợp và hỗ trợ đặt hàng trực tiếp qua điện thoại."
+      },
+      "q10": {
+        "question": "PolarLux có cửa hàng trực tiếp hay không?",
+        "answer": "Hiện tại, PolarLux hoạt động theo mô hình phân phối trực tuyến (online-first) nhằm mang đến giá bán cạnh tranh hơn 5–15% so với các hệ thống bán lẻ truyền thống. Vì vậy, PolarLux không mở chuỗi cửa hàng bán lẻ đại trà, giúp tối ưu chi phí vận hành và chuyển toàn bộ lợi ích về giá và ưu đãi cho khách hàng."
       }
     }
   },
@@ -242,412 +258,209 @@
     "all": "Tất cả"
   },
   "history": {
-    "title": "Lịch sử Samsung",
+    "title": "Lịch sử hình thành Polalux",
     "periods": [
       {
-        "id": "2018-present",
-        "period": "2018 đến nay",
-        "title": "Chấp nhận những thách thức mới để duy trì di sản của chúng tôi",
-        "description": "Sau khi công bố doanh số kỷ lục và lợi nhuận hoạt động vào năm trước đó, Samsung Electronics đặt mục tiêu vào một thách thức mới khi tổ chức lễ kỷ niệm lần thứ 50 vào năm 2019. Kể từ đó, Samsung đã liên tục phấn đấu để trở thành Số 1 trong ngành công nghiệp bán dẫn hệ thống đồng thời thúc đẩy tăng trưởng trong các lĩnh vực như AI và 5G.",
+        "id": "2024-present",
+        "period": "2024 - nay",
+        "title": "Khẳng định vị thế thương hiệu",
+        "description": "Polar Lux không ngừng đổi mới và mở rộng quy mô hoạt động, hướng đến mục tiêu trở thành đơn vị phân phối điện gia dụng hàng đầu tại Việt Nam, mang sản phẩm chất lượng quốc tế đến mọi gia đình Việt.",
         "timeline": [
           {
             "year": "2024",
-            "events": [
-              "Giữ vị trí dẫn đầu trên thị trường sản xuất TV toàn cầu năm thứ 18 liên tiếp",
-              "Phát triển LPDDR5X DRAM nhanh nhất trong ngành ở tốc độ 10.7Gbps",
-              "Bắt đầu sản xuất hàng loạt V-NAND thế hệ thứ 9 đầu tiên trong ngành",
-              "Đóng vai trò quan trọng trong Lễ khai mạc Paris 2024"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2023",
+        "period": "2023",
+        "title": "Chuyển đổi số & Nâng tầm trải nghiệm khách hàng",
+        "description": "Polar Lux áp dụng công nghệ AI và dữ liệu người dùng để tối ưu trải nghiệm mua sắm, dịch vụ hậu mãi và chăm sóc khách hàng.",
+        "timeline": [
           {
             "year": "2023",
-            "events": [
-              "Xếp hạng Top 5 Thương hiệu Toàn cầu năm thứ 4 liên tiếp",
-              "Đứng đầu thị trường TV toàn cầu năm thứ 17 liên tiếp",
-              "Bắt đầu sản xuất hàng loạt 12nm-class DRAM tiên tiến nhất trong ngành",
-              "Công bố mô hình AI tạo sinh Samsung Gauss"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2022",
+        "period": "2022",
+        "title": "Mở rộng danh mục sản phẩm",
+        "description": "Công ty mở rộng kinh doanh sang các dòng sản phẩm gia dụng cao cấp khác như máy giặt, máy lọc nước, và thiết bị nhà bếp thông minh.",
+        "timeline": [
           {
             "year": "2022",
-            "events": [
-              "Tổ chức Diễn đàn Samsung 6G đầu tiên",
-              "Bắt đầu sản xuất node xử lý 3nm đầu tiên trên thế giới",
-              "Ra mắt dịch vụ Samsung Gaming Hub",
-              "Công bố chiến lược môi trường mới"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2021",
+        "period": "2021",
+        "title": "Hợp tác cùng thương hiệu Samsung",
+        "description": "Polar Lux trở thành đối tác phân phối chính thức tủ lạnh Samsung tại Việt Nam, đặc biệt là dòng sản phẩm Samsung Family Hub – biểu tượng của công nghệ thông minh và tiện nghi hiện đại.",
+        "timeline": [
           {
             "year": "2021",
-            "events": [
-              "Ra mắt Neo QLED TVs",
-              "Ra mắt robot hút bụi hỗ trợ bởi AI",
-              "Giới thiệu bộ vi xử lý 5nm đầu tiên trong ngành",
-              "Công bố tầm nhìn phát triển bền vững: Galaxy dành cho Hành tinh"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2020",
+        "period": "2020",
+        "title": "Phát triển nền tảng thương mại điện tử",
+        "description": "Nhằm đáp ứng xu hướng mua sắm trực tuyến, Polar Lux ra mắt website thương mại điện tử mu-fridge.com, giúp khách hàng dễ dàng tiếp cận và trải nghiệm các sản phẩm tủ lạnh chính hãng ngay tại nhà.",
+        "timeline": [
           {
             "year": "2020",
-            "events": [
-              "Ra mắt Samsung MICRO LED 110\"",
-              "Giới thiệu Galaxy Z Flip và Galaxy Z Fold2",
-              "Xuất bản Báo cáo 6G",
-              "Xếp hạng Top 5 Thương hiệu Toàn cầu ($62.3 tỷ)"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2019",
+        "period": "2019",
+        "title": "Xây dựng uy tín và mạng lưới phân phối",
+        "description": "Công ty chính thức trở thành đối tác phân phối của nhiều thương hiệu lớn trong khu vực châu Á. Polar Lux tập trung mở rộng hệ thống đại lý, đảm bảo nguồn hàng chính hãng và dịch vụ hậu mãi tận tâm.",
+        "timeline": [
           {
             "year": "2019",
-            "events": [
-              "Công bố tầm nhìn CSR mới: Together for Tomorrow!",
-              "Ra mắt Galaxy Fold, tạo ra thế hệ di động hoàn toàn mới",
-              "Ra mắt điện thoại thông minh 5G đầu tiên",
-              "Giới thiệu tủ lạnh BESPOKE"
-            ]
-          },
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "2018",
+        "period": "2018",
+        "title": "Khởi đầu hành trình",
+        "description": "Polar Lux được thành lập với mục tiêu mang đến cho người tiêu dùng Việt Nam những sản phẩm điện gia dụng cao cấp, đặc biệt trong lĩnh vực tủ lạnh và thiết bị nhà bếp.",
+        "timeline": [
           {
             "year": "2018",
-            "events": [
-              "Bắt đầu sản xuất 8GB HBM2 Aquabolt",
-              "Ra mắt QLED 8K và TV The Wall",
-              "Thành lập bảy Trung tâm AI Toàn cầu",
-              "Cung cấp thiết bị thương mại mạng 5G đầu tiên"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "2008-2017",
-        "period": "2017-2008",
-        "title": "Trở thành công ty điện tử lớn nhất thế giới",
-        "description": "Sau cuộc khủng hoảng tài chính toàn cầu, Samsung Electronics dựa vào văn hóa sáng tạo và tự chủ để phát triển mạnh. Năm 2010, Samsung trở thành công ty điện tử lớn nhất thế giới về doanh số.",
-        "timeline": [
-          {
-            "year": "2017",
-            "events": [
-              "Thành lập đơn vị kinh doanh sản xuất tách biệt",
-              "Mở rộng tính năng giọng nói Bixby đến hơn 200 quốc gia",
-              "Ra mắt QLED TV và The Frame",
-              "Bắt đầu sản xuất hàng loạt V-NAND thế hệ 4"
-            ]
-          },
-          {
-            "year": "2016",
-            "events": [
-              "Ra mắt TV phong cách sống đầu tiên The Serif",
-              "Ra mắt Tủ lạnh Samsung Family Hub™",
-              "Mua lại Dacor và Viv Labs",
-              "Bắt đầu sản xuất hàng loạt 8Gb DDR4"
-            ]
-          },
-          {
-            "year": "2015",
-            "events": [
-              "Ra mắt SUHD TV với công nghệ Màu sắc Quantum",
-              "Công bố sản xuất hàng loạt Exynos 7 Octa",
-              "Ra mắt dịch vụ thanh toán Samsung Pay",
-              "Bắt đầu sản xuất bộ nhớ flash 256Gb V-NAND"
-            ]
-          },
-          {
-            "year": "2014",
-            "events": [
-              "Ra mắt Bộ sưu tập Chef",
-              "Bắt đầu sản xuất DRAM với công nghệ 20nm",
-              "Ra mắt UHD TV cong 105\"",
-              "Ra mắt Galaxy Note Edge"
-            ]
-          },
-          {
-            "year": "2013",
-            "events": [
-              "Thành lập nhà máy sản xuất di động tại Bắc Ninh, Việt Nam",
-              "Công bố công nghệ di động 5G mm-Wave đầu tiên",
-              "Bắt đầu sản xuất bộ nhớ flash 3D V-NAND"
-            ]
-          },
-          {
-            "year": "2012",
-            "events": [
-              "Sáp nhập Samsung LED Co., Ltd.",
-              "Thương mại hóa LTE tiên tiến đầu tiên",
-              "Xếp thứ 1 thị trường điện thoại di động toàn cầu",
-              "Xếp thứ 9 trong danh sách 100 thương hiệu toàn cầu"
-            ]
-          },
-          {
-            "year": "2011",
-            "events": [
-              "Phát triển DDR4 DRAM",
-              "Ra mắt thương hiệu AP di động Exynos",
-              "Ra mắt máy tính bảng Galaxy Tab 10.1",
-              "Ra mắt Galaxy Note"
-            ]
-          },
-          {
-            "year": "2010",
-            "events": [
-              "Phát triển 30nm-class 2Gb DDR3 DRAM",
-              "Mở Samsung Apps cho TVs",
-              "Ra mắt dòng điện thoại thông minh Galaxy",
-              "Trở thành công ty điện tử lớn nhất thế giới"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "1998-2007",
-        "period": "2007-1998",
-        "title": "Dẫn đầu quá trình chuyển đổi sang Thời đại kỹ thuật số",
-        "description": "Samsung Electronics thành công vượt qua khủng hoảng tài chính châu Á và trở thành một trong ba công ty điện tử hàng đầu thế giới với doanh thu 100 tỷ đô la vào năm 2007.",
-        "timeline": [
-          {
-            "year": "2007",
-            "events": [
-              "Trở thành nhà tài trợ của WorldSkills Competition",
-              "Ra mắt 70-inch Full HD LCD TV",
-              "Tổ chức Đội ngũ Kinh doanh Thiết bị Sức khỏe & Y tế",
-              "Phát triển bộ nhớ flash 30nm 64Gb NAND"
-            ]
-          },
-          {
-            "year": "2006",
-            "events": [
-              "Ra mắt đầu phát Blu-ray",
-              "Phát triển công nghệ NAND flash",
-              "Trở thành nhà tài trợ Paralympic Games",
-              "Đứng số 1 trong thị phần TV toàn cầu"
-            ]
-          },
-          {
-            "year": "2005",
-            "events": [
-              "Bắt đầu vận hành S Line tại Giheung",
-              "Trở thành nhà tài trợ Chelsea FC",
-              "Thành lập Studio Thiết kế tại Milano",
-              "Xuất xưởng điện thoại di động vượt 100 triệu chiếc"
-            ]
-          },
-          {
-            "year": "2004",
-            "events": [
-              "Ra mắt LCD TV lớn nhất thế giới (46 inch)",
-              "Thành lập trung tâm LSI R&D tại Trung Quốc",
-              "Thành lập S-LCD cùng Sony",
-              "Lợi nhuận ròng đạt 10 tỷ đô la"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "1988-1997",
-        "period": "1997-1988",
-        "title": "Cạnh tranh trên thị trường toàn cầu và tập trung vào kiểm soát chất lượng",
-        "description": "Năm 1988, Samsung Electronics đã khẳng định vị thế trên trường thế giới sau khi sáp nhập với Samsung Semiconductor & Telecommunications. Được dẫn dắt bởi câu thần chú \"Chất lượng là trên hết\", công ty đã sản xuất các sản phẩm cạnh tranh cho một thị trường đòi hỏi khắt khe và trở thành một cái tên quen thuộc trên khắp thế giới với tư cách là đối tác chính thức của Olympic Games.",
-        "timeline": [
-          {
-            "year": "1997",
-            "events": [
-              "Tổ chức Đơn vị Kinh doanh LSI Hệ thống",
-              "Xây dựng nhà máy đa phức hợp ở Seremban, Malaysia",
-              "Trở thành Đối tác Olympic Toàn cầu (TOP) trong danh mục truyền thông không dây"
-            ]
-          },
-          {
-            "year": "1996",
-            "events": [
-              "Xây dựng nhà máy đa phức hợp đầu tiên ở nước ngoài tại Tijuana, Mexico",
-              "Thương mại hóa hệ thống CDMA đầu tiên trên thế giới",
-              "Phát triển 1G DRAM",
-              "Phát triển bộ vi xử lý kiến trúc Alpha 64 bit đầu tiên"
-            ]
-          },
-          {
-            "year": "1995",
-            "events": [
-              "Thành lập Samsung Art and Design Institute (SADI)",
-              "Phát triển công nghệ MPEG-3 theo thời gian thực đầu tiên"
-            ]
-          },
-          {
-            "year": "1994",
-            "events": [
-              "Thành lập Samsung Design America tại San Francisco",
-              "Phát triển 256Mb DRAM đầu tiên trên thế giới",
-              "Tạo ra tổ chức dành riêng cho các dự án công dân doanh nghiệp"
-            ]
-          },
-          {
-            "year": "1993",
-            "events": [
-              "Ra mắt Company Identity (CI) cho Samsung Group",
-              "Xây dựng nhà máy chế tạo tấm wafer 200mm đầu tiên",
-              "Công bố Sáng kiến Quản lý Mới",
-              "Ra mắt thiết bị cầm tay có trọng lượng chưa tới 200g"
-            ]
-          },
-          {
-            "year": "1992",
-            "events": [
-              "Phát triển hệ thống điện thoại di động",
-              "Phát triển 64Mb DRAM đầu tiên trên thế giới",
-              "Trở thành số 1 về DRAM trên toàn thế giới"
-            ]
-          },
-          {
-            "year": "1991",
-            "events": [
-              "Xây dựng nhà máy hậu xử lý chất bán dẫn tại Onyang",
-              "Thành lập studio thiết kế tại Nhật Bản"
-            ]
-          },
-          {
-            "year": "1989",
-            "events": [
-              "Xây dựng Trung tâm ULSI R&D ở Giheung",
-              "Thành lập liên doanh Công ty Sản xuất TV tại Trung Quốc"
-            ]
-          },
-          {
-            "year": "1988",
-            "events": [
-              "Phát triển thiết bị cầm tay đầu tiên của Hàn Quốc",
-              "Samsung Semiconductor sáp nhập với Samsung Electronics"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "1980-1987",
-        "period": "1987-1980",
-        "title": "Trở thành một công ty công nghệ cao",
-        "description": "Vào những năm 1980, Samsung đã thiết lập một bản sắc doanh nghiệp mới tập trung vào việc bảo mật công nghệ của riêng mình, tăng cường R&D, mở rộng hoạt động kinh doanh bán dẫn vào lĩnh vực VLSI tiên tiến. Công ty cũng đã ra mắt công ty con sản xuất toàn cầu đầu tiên tại Bồ Đào Nha.",
-        "timeline": [
-          {
-            "year": "1987",
-            "events": [
-              "Mở Samsung Advanced Institute of Technology (SAIT) để tăng cường R&D"
-            ]
-          },
-          {
-            "year": "1986",
-            "events": [
-              "Thương mại hóa hệ thống chuyển đổi kỹ thuật số TDX-1",
-              "Phát triển TV kỹ thuật số đầu tiên trên thế giới",
-              "Phát triển 1Mb DRAM",
-              "Phát triển máy quay băng video nhỏ nhất, nhẹ nhất thế giới"
-            ]
-          },
-          {
-            "year": "1985",
-            "events": [
-              "Công bố tài trợ cho Asian Games 1986 và Olympic Games 1988",
-              "Phát hành trái phiếu chuyển đổi nước ngoài đầu tiên"
-            ]
-          },
-          {
-            "year": "1984",
-            "events": [
-              "Đổi tên công ty thành Samsung Electronics Co., Ltd.",
-              "Phát triển 256Kb DRAM"
-            ]
-          },
-          {
-            "year": "1983",
-            "events": [
-              "Bắt đầu sản xuất máy tính cá nhân (SPC-1000)",
-              "Khởi công cơ sở sản xuất chất bán dẫn VLSI tại Giheung",
-              "Phát triển 64Kb DRAM"
-            ]
-          },
-          {
-            "year": "1982",
-            "events": [
-              "Thành lập văn phòng kinh doanh đầu tiên ở châu Âu tại Đức",
-              "Thành lập công ty con sản xuất ở nước ngoài đầu tiên tại Bồ Đào Nha",
-              "Tổ chức lại công ty: Samsung Semiconductor & Telecommunications"
-            ]
-          },
-          {
-            "year": "1980",
-            "events": [
-              "Samsung Semiconductor sáp nhập với Samsung Electronics",
-              "Thành lập Corporate Identity Program (CIP) đầu tiên",
-              "Mua lại Korea Telecommunications Co., Ltd.",
-              "Mở Trung tâm R&D đầu tiên ở Suwon"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "1969-1979",
-        "period": "1979-1969",
-        "title": "Thành lập và phát triển thành nhà cung cấp điện tử tiêu dùng toàn diện",
-        "description": "Ngay sau khi thành lập vào năm 1969, Samsung Electronics nhanh chóng trở thành một trong những nhà sản xuất hàng đầu của Hàn Quốc. Sự tăng trưởng ban đầu là do ngành công nghiệp hàng điện tử tiêu dùng trong nước mới bắt đầu cất cánh và công ty bắt đầu xuất khẩu sản phẩm.",
-        "timeline": [
-          {
-            "year": "1979",
-            "events": [
-              "Phát triển VCRs dựa trên VHS (sản phẩm: SC-7700)"
-            ]
-          },
-          {
-            "year": "1978",
-            "events": [
-              "Korea Semiconductor được đổi tên thành Samsung Semiconductor",
-              "Thành lập văn phòng nước ngoài đầu tiên tại Hoa Kỳ",
-              "Sản xuất 4 triệu chiếc TVs đen trắng",
-              "Phát triển lò vi sóng đầu tiên"
-            ]
-          },
-          {
-            "year": "1977",
-            "events": [
-              "Samsung Electric sáp nhập với Samsung Electronics",
-              "Bắt đầu sản xuất và xuất khẩu TVs màu ra toàn cầu",
-              "Hoàn tất việc mua lại Korea Semiconductor"
-            ]
-          },
-          {
-            "year": "1976",
-            "events": [
-              "Sản xuất 1 triệu TVs đen trắng"
-            ]
-          },
-          {
-            "year": "1975",
-            "events": [
-              "Ra mắt TV hệ thống Khởi động Nhanh thứ ba trên thế giới"
-            ]
-          },
-          {
-            "year": "1974",
-            "events": [
-              "Samsung-Sanyo Electric được đổi tên thành Samsung Electric",
-              "Mua lại 50% cổ phần của Korea Semiconductor",
-              "Bắt đầu sản xuất máy giặt, tủ lạnh và máy điều hòa"
-            ]
-          },
-          {
-            "year": "1971",
-            "events": [
-              "Bắt đầu xuất khẩu TVs đen trắng ra thị trường toàn cầu"
-            ]
-          },
-          {
-            "year": "1970",
-            "events": [
-              "Bắt đầu sản xuất TV đen trắng (sản phẩm: P-3202)"
-            ]
-          },
-          {
-            "year": "1969",
-            "events": [
-              "Thành lập Samsung Electronics Co., Ltd.",
-              "Thành lập Samsung-Sanyo Electric, công ty liên doanh với Sanyo"
-            ]
+            "events": []
           }
         ]
       }
     ]
+  },
+  "policies": {
+    "title": "Chính sách",
+    "titleHighlight": "của chúng tôi",
+    "description": "Cam kết mang đến trải nghiệm mua sắm tốt nhất cho khách hàng",
+    "warranty": {
+      "title": "Chính Sách Bảo Hành",
+      "icon": "🧾",
+      "scope": {
+        "title": "Phạm vi áp dụng:",
+        "content": "Tất cả sản phẩm tủ lạnh Samsung chính hãng được phân phối trực tiếp bởi PolarLux, có tem chứng nhận – hóa đơn điện tử – bảo hành toàn quốc."
+      },
+      "duration": {
+        "title": "Thời gian bảo hành:",
+        "items": [
+          "Theo tiêu chuẩn của Samsung Việt Nam: 24 tháng.",
+          "Tặng thêm 6 tháng bảo hành mở rộng cho khách hàng đăng ký trực tuyến qua hệ thống của PolarLux."
+        ]
+      },
+      "coverage": {
+        "title": "Hình thức bảo hành:",
+        "items": [
+          "Bảo hành chính hãng toàn quốc tại các trung tâm Samsung.",
+          "Hỗ trợ kỹ thuật và xử lý sự cố tại nhà cho tủ lạnh dung tích lớn.",
+          "Khách hàng có thể kích hoạt bảo hành điện tử ngay sau khi nhận hàng, đảm bảo minh bạch và an tâm tuyệt đối."
+        ]
+      },
+      "note": "Không áp dụng bảo hành cho sản phẩm hư hỏng do va đập, sử dụng sai hướng dẫn, hoặc đã bị can thiệp bởi bên thứ ba không được ủy quyền."
+    },
+    "shipping": {
+      "title": "Chính Sách Giao Hàng",
+      "icon": "🚚",
+      "scope": {
+        "title": "Phạm vi:",
+        "content": "Giao hàng toàn quốc với hệ thống vận chuyển chuyên biệt của PolarLux."
+      },
+      "duration": {
+        "title": "Thời gian giao:",
+        "items": [
+          "Nội thành TP.HCM & Hà Nội: 1–2 ngày làm việc",
+          "Tỉnh thành khác: 3–5 ngày làm việc"
+        ]
+      },
+      "fee": {
+        "title": "Phí giao hàng:",
+        "items": [
+          "Miễn phí 100% với mọi đơn hàng từ 7.000.000đ trở lên",
+          "Đơn nhỏ hơn: phí từ 30.000–300.000đ, tùy khu vực"
+        ]
+      },
+      "commitment": {
+        "title": "Cam kết:",
+        "items": [
+          "Giao hàng tận nơi – đúng hẹn",
+          "Kiểm tra hàng trước khi thanh toán",
+          "Đảm bảo hàng nguyên seal, đầy đủ phụ kiện & hóa đơn điện tử"
+        ]
+      }
+    },
+    "installation": {
+      "title": "Chính Sách Lắp Đặt",
+      "icon": "🔧",
+      "service": {
+        "title": "Dịch vụ áp dụng:",
+        "content": "Miễn phí lắp đặt & hướng dẫn sử dụng tại nhà cho tất cả tủ lạnh Samsung mua tại PolarLux."
+      },
+      "details": {
+        "title": "Chi tiết dịch vụ:",
+        "items": [
+          "Lắp đặt theo tiêu chuẩn kỹ thuật của Samsung.",
+          "Hướng dẫn khách hàng kích hoạt bảo hành và sử dụng các tính năng AI – Family Hub.",
+          "Kiểm tra hoạt động, vệ sinh vị trí lắp đặt và bàn giao sản phẩm trong trạng thái hoàn thiện."
+        ]
+      },
+      "note": "Chi phí phát sinh (nếu có): Chỉ áp dụng cho các trường hợp đặc biệt (lắp đặt xa nguồn điện, kéo ống nước dài, thay đổi vị trí phức tạp...) và sẽ được thông báo trước khi thực hiện."
+    },
+    "return": {
+      "title": "Chính Sách Đổi Trả",
+      "icon": "🔄",
+      "duration": {
+        "title": "Thời gian áp dụng:",
+        "items": [
+          "Đổi mới trong 15 ngày nếu sản phẩm bị lỗi kỹ thuật do nhà sản xuất.",
+          "1 đổi 1 trong 30 ngày đầu đối với các sản phẩm nằm trong chương trình \"Chính hãng an tâm\" của PolarLux.",
+          "Với sản phẩm không lỗi, khách hàng có thể đổi sang mẫu khác trong 3 ngày, nếu hàng chưa sử dụng và còn nguyên tem – bao bì."
+        ]
+      },
+      "commitment": {
+        "title": "Cam kết:",
+        "items": [
+          "Quy trình đổi trả minh bạch, nhanh chóng.",
+          "Miễn phí vận chuyển đổi trả cho sản phẩm lỗi kỹ thuật.",
+          "Hỗ trợ kỹ thuật & bảo hành tận nơi trong suốt thời gian sử dụng."
+        ]
+      }
+    },
+    "promotion": {
+      "title": "Chính Sách Ưu Đãi",
+      "icon": "🎁",
+      "highlights": {
+        "title": "Ưu đãi nổi bật:",
+        "items": [
+          "Giá bán thấp hơn trung bình 5–15% so với các hệ thống điện máy lớn.",
+          "Trả góp 0% lãi suất, không cần thế chấp.",
+          "Miễn phí vận chuyển & lắp đặt toàn quốc.",
+          "Flash Sale hàng tuần, quà tặng hấp dẫn theo từng dòng tủ lạnh."
+        ]
+      },
+      "loyalty": {
+        "title": "Chính sách khách hàng thân thiết:",
+        "items": [
+          "Tích điểm & nhận quà cho các đơn hàng tiếp theo.",
+          "Ưu đãi riêng cho khách hàng đăng ký thành viên hoặc mua số lượng lớn.",
+          "Cập nhật khuyến mãi sớm nhất qua bản tin email & kênh Zalo Official của PolarLux."
+        ]
+      }
+    }
   }
 }

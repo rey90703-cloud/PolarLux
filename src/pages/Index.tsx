@@ -6,10 +6,11 @@ import Technology from "@/components/Technology";
 import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
 import History from "@/components/History";
+import Policies from "@/components/Policies";
 import Footer from "@/components/Footer";
 import Cart from "@/components/Cart";
 import LoginModal from "@/components/LoginModal";
-import ChatSupport from "@/components/ChatSupport";
+import CustomerSupport from "@/components/CustomerSupport";
 
 const Index = () => {
   return (
@@ -22,10 +23,11 @@ const Index = () => {
       <Gallery />
       <FAQ />
       <History />
+      <Policies />
       <Footer />
       <Cart />
       <LoginModal />
-      <ChatSupport />
+      <CustomerSupport />
     </div>
   );
 };

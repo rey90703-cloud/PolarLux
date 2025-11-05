@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -33,6 +34,7 @@ const getRating = (modelName: string): { stars: number; count: number } => {
 
 const Collection = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { data, isLoading, error } = useRefrigerators();
   const { addToCart, setCartOpen } = useCart();
   const [selectedFridge, setSelectedFridge] = useState<RefrigeratorProduct | null>(null);
@@ -295,7 +297,7 @@ const Collection = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => setSelectedFridge(fridge)}
+                      onClick={() => navigate(`/product/${fridge.id}`)}
                     >
                       {t('collection.viewDetails')}
                     </Button>

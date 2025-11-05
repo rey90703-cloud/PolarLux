@@ -105,9 +105,9 @@ const History = () => {
             />
           </div>
 
-          {/* Timeline Area */}
-          <div className="relative bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 rounded-xl lg:rounded-2xl p-6 lg:p-8">
-            {/* Timeline Container */}
+          
+          {/* <div className="relative bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 rounded-xl lg:rounded-2xl p-6 lg:p-8">
+            
             <div 
               ref={timelineRef}
               className="overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
@@ -123,14 +123,14 @@ const History = () => {
                     className="flex-shrink-0 w-[280px] lg:w-[320px] scroll-snap-align-start"
                     style={{ scrollSnapAlign: 'start' }}
                   >
-                    {/* Year Header */}
+                    
                     <div className="mb-4 pb-3 border-b-2 border-primary">
                       <h6 className="text-2xl lg:text-3xl font-bold text-gray-900">
                         {item.year}
                       </h6>
                     </div>
                     
-                    {/* Events List */}
+                   
                     <div className="space-y-3">
                       <ul className="space-y-2.5">
                         {item.events.map((event, eventIndex) => (
@@ -150,7 +150,7 @@ const History = () => {
               </div>
             </div>
 
-            {/* Navigation Indicator */}
+            
             <div className="flex items-center justify-center gap-4 mt-6">
               <button
                 onClick={handlePrevious}
@@ -181,10 +181,10 @@ const History = () => {
               </button>
             </div>
 
-            {/* Gradient Overlays for visual effect */}
+            
             <div className="absolute left-0 top-0 bottom-16 w-12 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none rounded-l-xl" />
             <div className="absolute right-0 top-0 bottom-16 w-12 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none rounded-r-xl" />
-          </div>
+          </div> */}
         </div>
       </div>
 
